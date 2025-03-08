@@ -14,10 +14,15 @@ int mag[8];
 int numero;
 bool enter = true;
 int j = 0;
+
+
 void loop() {
 if (digitalRead(10) == HIGH || enter == true) {
   numero  = random(0, 255);
   enter = false;
+  for (int h = 0; h < 8 ; h++) {
+    mag[h] = bitRead(numero, h);
+  }
   j = 0;
 }
 
@@ -25,7 +30,7 @@ if (digitalRead(10) == HIGH || enter == true) {
 //numero  = random(0, 255);
 for (int i = 0; i < 8 ; i++) {
   
-  mag[i] = bitRead(numero, i);
+  
   if (mag[i] == 0) {
     leds[i] = CRGB ( 0, 0, 255);
   } else if  (mag[i] == 1 ) {
