@@ -1,7 +1,7 @@
 
 #include <esp_now.h>
 #include <WiFi.h>
-const int lightME = 2;
+const int lightME = 16;
 
 struct __attribute__((packed)) dataPacket {
   
@@ -15,7 +15,9 @@ struct __attribute__((packed)) dataPacket {
   memcpy(&packet, incomingData, sizeof(packet));
   Serial.print("button: ");
   Serial.println(packet.state);
-  digitalWrite(lightME,(packet.state));
+  digitalWrite(lightME,HIGH);
+  delay(1000);
+  digitalWrite(lightME,LOW);
   
 }
  

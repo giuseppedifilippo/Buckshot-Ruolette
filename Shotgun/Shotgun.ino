@@ -93,5 +93,14 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
      }
      timer = millis();
    }
+    // Send message via ESP-NOW
+  esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &BME280Readings, sizeof(BME280Readings));
+   
+  if (result == ESP_OK) {
+    Serial.println("Sent with success");
+  }
+  else {
+    Serial.println("Error sending the data");
+  }
    
  }

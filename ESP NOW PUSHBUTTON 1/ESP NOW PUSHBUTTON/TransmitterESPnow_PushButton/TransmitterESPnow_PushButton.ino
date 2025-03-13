@@ -1,10 +1,10 @@
 
 #include <esp_now.h>
 #include <WiFi.h>
-const int pushDown = 1;
+const int pushDown = 34;
 // RECEIVER MAC ADDRESS: 60:55:f9:af:83:ec
 // REPLACE WITH YOUR RECEIVER MAC Address
-uint8_t broadcastAddress[] = {0x60, 0x55, 0xf9, 0xaf, 0x83, 0xec};
+uint8_t broadcastAddress[] = {0x3c, 0x61, 0x05, 0x3e, 0xbd, 0x60};
 struct __attribute__((packed)) dataPacket {
   int state ;
 };
@@ -47,15 +47,17 @@ void setup() {
     return;
   }
 }
- 
+dataPacket packet;
+
 void loop() {
 
-   dataPacket packet;
+   
 
-  packet.state = digitalRead(pushDown);
-
+  packet.state = 1;
+if (digitalRead(pushDown) == HIGH) {
   esp_now_send(broadcastAddress, (uint8_t *) &packet, sizeof(packet));
-
+  Serial.println("culo");
+}
   delay(30);
  
 }
