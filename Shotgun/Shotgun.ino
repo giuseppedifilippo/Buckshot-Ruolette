@@ -5,20 +5,31 @@
 #include "Wire.h"
 #include <MPU6050_light.h>
 
+MPU6050 mpu(Wire);
+unsigned long timer = 0;
 
- MPU6050 mpu(Wire);
- unsigned long timer = 0;
+int trigger_pin = 17;//pin su cui è collegato l'interruttore del grilletto
+
+
 //indirizzo MAC della board Base a cui mandare il segnale
 uint8_t broadcastAddress[] = {0x3c, 0x61, 0x05, 0x3e, 0xbd, 0x60};
+
+
+
 //stinga da conservare se l' invio del messaggio palle
 String success;
 
+//il messaggio deve essere in una struct dato che deve essere passato per riferimento
+struct __attribute__((packed)) dataPacket {
+  bool shot;//shot indica se è stato sparato un live(true) o un blank(false)
+  int aiming_at;//valore tra 1 e 4, indica a quale giocatore il fucile punta al momento del fuoco
+};
 
-typedef int Mag[8];
-Mag incoming;
 
-//info sulla sua schedapeer
+//info sulla sua scheda peer
 esp_now_peer_info_t peerInfo;
+
+
 
 // Callback quando i dati sono mandati
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
