@@ -14,6 +14,20 @@ int numero;
 bool enter = true;
 int j = 0;
 
+//struct che contiene la seuenza delle munizioni da mandare all esp sul fucile
+struct __attribute__((packed)) dataPacket {
+  int mag[8];
+}
+
+ void OnDataRecv(const esp_now_recv_info* info, const uint8_t *incomingData, int len) {
+  
+  dataPacket packet;
+  memcpy(&packet, incomingData, sizeof(packet));
+  leds[j] = CRGB ( 0, 0, 0 );
+  FastLED.show();
+  mag[j] = 2;
+  j++;
+ }
 
 
 void setup() {
