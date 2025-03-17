@@ -14,11 +14,23 @@ int numero;
 bool enter = true;
 int j = 0;
 
+//indirizzo mac della scheada del fucile
+uint8_t broadcastAdress[] = {0x3c, 0x61, 0x05,0x31,0x67, 0x60};
+
+esp_now_peer_info_t peerInfo;
+
 //struct che contiene la seuenza delle munizioni da mandare all esp sul fucile
 struct __attribute__((packed)) dataPacket {
   int mag[8];
 }
 
+
+// callback when data is sent - I CAN CHANGE THIS FUNCTION BELOW
+void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
+  Serial.print("\r\nLast Packet Send Status:\t");
+  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
+
+//callback quando vengono ricevuti dati
  void OnDataRecv(const esp_now_recv_info* info, const uint8_t *incomingData, int len) {
   
   dataPacket packet;

@@ -5,7 +5,8 @@
 #include "Wire.h"
 #include <MPU6050_light.h>
 
-
+int trigger = 17; //pin dell 
+int luce = 34;// led che simula il flash di uno sparo
  MPU6050 mpu(Wire);
  unsigned long timer = 0;
 //indirizzo MAC della board Base a cui mandare il segnale
@@ -14,10 +15,21 @@ uint8_t broadcastAddress[] = {0x3c, 0x61, 0x05, 0x3e, 0xbd, 0x60};
 String success;
 
 
-typedef int Mag[8];
-Mag incoming;
+//struttura dati che contiene i messaggi da mandare all altra scheda
+//__attribute__((packed)) fa semplicemente in modo che occupi il meno spazio possibile
+struct __attribute__((packed)) dataPacket {
+  bool blank;//idica se il proittile sparato è live o blank
+  int aiming;// intero tra 1 e 4 che inidca a che giocatore stava puntando il fucile al momento dello sparo
+};
 
-//info sulla sua schedapeer
+
+//struttura dati che contiene i dati in arrivo dall altra scheda
+struct __attribute__((packed)) datiRicevuti {
+  int mag[8];
+};
+
+
+//info sulla sua scheda peer
 esp_now_peer_info_t peerInfo;
 
 // Callback quando i dati sono mandati
@@ -34,15 +46,17 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
 
 // Callback when data is received
 void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
-  memcpy(&incoming, incomingData, sizeof(incoming));
+  memcpy(&incomingData, incomingData, sizeof(incomingData));
   Serial.print("Bytes received: ");
   Serial.println(len);
-  
+  datiRicevuti.mag = incomingData.mag;
   
 }
 
  void setup() {
    Serial.begin(115200);
+   pinMode(trigger, INPUT_PULLUP);
+   pinMode(luce, OUTPUT);
    Wire.begin();
  byte status = mpu.begin();
    Serial.print(F("MPU6050 status: "));
@@ -94,7 +108,9 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
      timer = millis();
    }
     // Send message via ESP-NOW
-  esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &BME280Readings, sizeof(BME280Readings));
+  if (digitalRead(trigger) == HIGH) {
+    //aggiungere la sequenza che dice l angolo di puntamento al momento di premuta del grilleto
+  esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &dataPacket, sizeof(dataPacket));
    
   if (result == ESP_OK) {
     Serial.println("Sent with success");
@@ -102,5 +118,10 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
   else {
     Serial.println("Error sending the data");
   }
+  }
    
  }
+ /*cose da aggiungere:
+ -fare in modo che alla pressione del grilleto venga mandato l angolo di puntamento alla base
+ -dioporco
+-riscrivere sto codice da capo perchè non ho idea che cazzo sia rimasto da aggiustare*/
