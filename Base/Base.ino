@@ -91,5 +91,5 @@ Serial.println();*/
 
 delay(3000);
 }
-
+/*aggiungere tutta la parte che si occupa di inviare la sequenza alla board B*/
 

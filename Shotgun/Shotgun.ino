@@ -21,8 +21,12 @@ String success;
 
 //il messaggio deve essere in una struct dato che deve essere passato per riferimento
 struct __attribute__((packed)) dataPacket {
-  bool shot;//shot indica se è stato sparato un live(true) o un blank(false)
+  int shot;//shot indica se è stato sparato un live(true) o un blank(false)
   int aiming_at;//valore tra 1 e 4, indica a quale giocatore il fucile punta al momento del fuoco
+};
+
+struct __attribute__((packed)) incomingData {
+  int mag[8];
 };
 
 
@@ -45,7 +49,7 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
 
 // Callback when data is received
 void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
-  memcpy(&incoming, incomingData, sizeof(incoming));
+  memcpy(&incomingData, incomingData, sizeof(incomingData));
   Serial.print("Bytes received: ");
   Serial.println(len);
   
@@ -104,8 +108,10 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
      }
      timer = millis();
    }
+   dataPacket packet;//devi ridichiarare la struct dopo aver fatto la typedef
+
     // Send message via ESP-NOW
-  esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &BME280Readings, sizeof(BME280Readings));
+  esp_err_t result = esp_now_send(broadcastAddress,(uint8_t *) &packet, sizeof(packet));//fixare richiede un espressine prima della virgola
    
   if (result == ESP_OK) {
     Serial.println("Sent with success");
