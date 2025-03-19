@@ -2,7 +2,8 @@
 dei turni danni e altro, genera una sequenza di shell e le manda alla 
 scheda sul fucile che a sua volta manderà un messaggio quando un colpo sarà 
 sparato carico o a salve*/
-
+#include <esp_now.h>
+#include <WiFi.h>
 #include <FastLED.h>
 #define NUM_LEDS 8
 #define LED_PIN 4 //gpio4 su esp32
@@ -22,13 +23,14 @@ esp_now_peer_info_t peerInfo;
 //struct che contiene la seuenza delle munizioni da mandare all esp sul fucile
 struct __attribute__((packed)) dataPacket {
   int mag[8];
-}
+};
 
 
 // callback when data is sent - I CAN CHANGE THIS FUNCTION BELOW
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.print("\r\nLast Packet Send Status:\t");
   Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
+}
 
 //callback quando vengono ricevuti dati
  void OnDataRecv(const esp_now_recv_info* info, const uint8_t *incomingData, int len) {
