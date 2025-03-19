@@ -4,6 +4,7 @@ e i danni e il calcolo delle shell*/
 
 //COSE DA AGGIUNGERE
 //comunicazione per dire è stato cambiato il giocatore e deve ricalibrare l mpu
+//dovrei cambiare la struttura dati che il fucile riceve  
 #include <esp_now.h>
 #include <WiFi.h>
 #include "Wire.h"
@@ -17,11 +18,6 @@ int trigger_pin = 17;  //pin su cui è collegato l'interruttore del grilletto
 
 //indirizzo MAC della board Base a cui mandare il segnale
 uint8_t broadcastAddress[] = { 0x3c, 0x61, 0x05, 0x3e, 0xbd, 0x60 };
-
-
-//lista concatenata ciclica che indica l ordine dei giocatore e la posizione relativa agli altri
-
-
 
 //stinga da conservare se l' invio del messaggio palle
 String success;
@@ -38,7 +34,7 @@ struct __attribute__((packed)) dataPacket {
 };
 
 struct __attribute__((packed)) incomingData {
-  int mag[8];
+  bool shell;//inidca se la prossima shell è live
   bool next; //indica se è cambiato il turno
 };
 
