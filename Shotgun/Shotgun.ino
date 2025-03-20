@@ -4,7 +4,7 @@ e i danni e il calcolo delle shell*/
 
 //COSE DA AGGIUNGERE
 //comunicazione per dire è stato cambiato il giocatore e deve ricalibrare l mpu
-//dovrei cambiare la struttura dati che il fucile riceve  
+//dovrei cambiare la struttura dati che il fucile riceve
 #include <esp_now.h>
 #include <WiFi.h>
 #include "Wire.h"
@@ -12,9 +12,8 @@ e i danni e il calcolo delle shell*/
 
 MPU6050 mpu(Wire);
 unsigned long timer = 0;
-
-int trigger_pin = 17;  //pin su cui è collegato l'interruttore del grilletto
-
+int trigger_pin = 15;  //pin su cui è collegato l'interruttore del grilletto
+int light = 34;        //pin per i led che simulano il flash del fucile
 
 //indirizzo MAC della board Base a cui mandare il segnale
 uint8_t broadcastAddress[] = { 0x3c, 0x61, 0x05, 0x3e, 0xbd, 0x60 };
@@ -33,16 +32,15 @@ struct __attribute__((packed)) dataPacket {
   int aiming_at;
 };
 
+dataPacket packet;  //devi ridichiarare la struct dopo aver fatto la typedef
 struct __attribute__((packed)) incomingData {
-  bool shell;//inidca se la prossima shell è live
-  bool next; //indica se è cambiato il turno
+  bool shell;  //inidca se la prossima shell è live
+  bool next;   //indica se è cambiato il giocatore ed è necessario aggiornare la posizione del fucile
 };
-
+incomingData in_arrivo;
 
 //info sulla sua scheda peer
 esp_now_peer_info_t peerInfo;
-
-
 
 // Callback quando i dati sono mandati
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
@@ -55,7 +53,7 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   }
 }
 
-// Callback when data is received
+// Callback when data is received 
 void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len) {
   memcpy(&incomingData, incomingData, sizeof(incomingData));
   Serial.print("Bytes received: ");
@@ -64,6 +62,8 @@ void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len) {
 
 void setup() {
   Serial.begin(115200);
+  pinMode(trigger_pin, INPUT_PULLDOWN);
+  pinMode(light, OUTPUT);
   Wire.begin();
   byte status = mpu.begin();
   Serial.print(F("MPU6050 status: "));
@@ -102,33 +102,42 @@ void setup() {
   esp_now_register_recv_cb(esp_now_recv_cb_t(OnDataRecv));
 }
 
-dataPacket packet;  //devi ridichiarare la struct dopo aver fatto la typedef
+
 
 void loop() {
   mpu.update();
+  if (in_arrivo.next == true) {
+    mpu.calcOffsets();  //quando cambia giocatore ricalibra il giroscopio
+  }
   if ((millis() - timer) > 10) {  //aggiorna la posizione ogni 10ms
-    if (mpu.getAngleZ() < 20 && mpu.getAngleZ() > -20) {
+    if (mpu.getAngleZ() < 20 && mpu.getAngleZ() > -20 && mpu.getAngleX() < 90) {
       packet.aiming_at = 4;
       Serial.println("aiming at front");
-    } else if (mpu.getAngleZ() < -20 && mpu.getAngleZ() > -60) {
+    } else if (mpu.getAngleZ() < -20 && mpu.getAngleZ() > -60 && mpu.getAngleX() < 90) {
       packet.aiming_at = 3;
       Serial.println("aiming at right");
-    } else if (mpu.getAngleZ() < 60 && mpu.getAngleZ() > 20) {
+    } else if (mpu.getAngleZ() < 60 && mpu.getAngleZ() > 20  && mpu.getAngleX() < 90) {
       packet.aiming_at = 1,
       Serial.println("aiming at left");
+    } if (mpu.getAngleX() > 90 && mpu.getAngleX() < 180) {
+      packet.aiming_at = 2;
+      Serial.println("suicide mode");
     }
-    //aggiungere suicide mode
-    //dovrei calcolare gli angoli usando basic readings
-    timer = millis();
+  timer = millis();
   }
+  //sequenza di azioni che avvengono alla pressione del grilletto
+  if (digitalRead(trigger_pin) == HIGH) {
+    // Send message via ESP-NOW
+    digitalWrite(light, HIGH);
+    delay(100);
+    digitalWrite(light, LOW);
+    esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *)&packet, sizeof(packet));  //fixare richiede un espressine prima della virgola
 
 
-  // Send message via ESP-NOW
-  esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *)&packet, sizeof(packet));  //fixare richiede un espressine prima della virgola
-
-  if (result == ESP_OK) {
-    Serial.println("Sent with success");
-  } else {
-    Serial.println("Error sending the data");
+    if (result == ESP_OK) {
+      Serial.println("Sent with success");
+    } else {
+      Serial.println("Error sending the data");
+    }
   }
 }
