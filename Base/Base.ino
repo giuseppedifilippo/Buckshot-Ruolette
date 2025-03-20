@@ -2,6 +2,16 @@
 dei turni danni e altro, genera una sequenza di shell e le manda alla 
 scheda sul fucile che a sua volta manderà un messaggio quando un colpo sarà 
 sparato carico o a salve*/
+  /*PER ANDREA*/
+/*Se vuoi capire un pochino di più di sta roba cerca FASTLED che è la libreria più usata per controllare led RGB*/
+/*di sto passo finisco il codice prima che tu possa metterci le mani
+//BISMILLAH
+TRERKA
+/*PER ME*/
+//RICORDA BENE SE IMPOSTI INPUT_PULLUP VA LOW QUANDO CONNESSO A GND PREMENDO IL PULSANTE,
+// SE INVECE IMPOSTI INPUT_PULLDOWN VA HIGH QUANDO PREMI IL PULSANTE CONNESSO A VCC VA HIGH
+/*ALTRA COSA DA RICORDARE*/
+//SU ESP32 I GPIO CON PULLDOWN INTERNO SONO TUTTI QUELLI NON SPECIALI
 #include <esp_now.h>
 #include <WiFi.h>
 #include <FastLED.h>
@@ -24,6 +34,18 @@ esp_now_peer_info_t peerInfo;
 struct __attribute__((packed)) dataPacket {
   int mag[8];
 };
+
+struct sequenza {
+  sequenza* next;//puntatore al prossimo giocatore in senso orario
+  sequenza* prev;//puntatore al prossimo giocatore in senso antioraio
+  int current;//identificativo del giocatore attuale(int da 1 a 4)
+  int lives;//vite che possiede il giocatore attuale
+  bool alive;//se il giocatore è ancora vivo (deprecabile?)
+  /*se mai deciderò di voler implementare anche gli item questa struttura sarà da rifare e cambiare completamente la gestione dei giocatori
+  anche se o questo o un array ma credo sia peggio
+  FUCK IT mi inventerò un modo*/
+};
+sequenza giocatori;
 
 
 // callback when data is sent - I CAN CHANGE THIS FUNCTION BELOW
@@ -84,7 +106,7 @@ if (digitalRead(11) == HIGH ) { //shot fired
 } 
 
 //per debugging; stampa la sequenza del caricatore
-/*for (int j = 0 ; j < 8; j++){
+/*for (int j = 0 ; j < 8; j++){ 
 Serial.print(mag[j]);
 }
 Serial.println();*/
@@ -92,4 +114,5 @@ Serial.println();*/
 delay(3000);
 }
 /*aggiungere tutta la parte che si occupa di inviare la sequenza alla board B*/
+/*convertire la parte che genera la sequenza binaria da interna al loop a una funzione esterna*/
 
