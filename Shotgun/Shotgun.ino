@@ -23,7 +23,7 @@ String success;
 
 //il messaggio deve essere in una struct dato che deve essere passato per riferimento
 struct __attribute__((packed)) dataPacket {
-  int shot;  //shot indica se è stato sparato un live(true) o un blank(false)
+  bool shot;  //shot indica se è stato sparato un live(true) o un blank(false)
   //valore tra 1 e 4, indica a quale giocatore il fucile punta al momento del fuoco
   //1 vuol dire che il fucile è puntato alla propria sinistra
   //2 vuol dire che è puntato a se stesso
@@ -109,6 +109,7 @@ void loop() {
   if (in_arrivo.next == true) {
     mpu.calcOffsets();  //quando cambia giocatore ricalibra il giroscopio
   }
+  //tutto sto pappone serve a capire in che direzione sta puntando il fucile
   if ((millis() - timer) > 10) {  //aggiorna la posizione ogni 10ms
     if (mpu.getAngleZ() < 20 && mpu.getAngleZ() > -20 && mpu.getAngleX() < 90) {
       packet.aiming_at = 4;
