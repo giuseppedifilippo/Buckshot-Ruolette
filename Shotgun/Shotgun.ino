@@ -127,7 +127,7 @@ void loop() {
   timer = millis();
   }
   //sequenza di azioni che avvengono alla pressione del grilletto
-  if (digitalRead(trigger_pin) == HIGH) {
+  if (digitalRead(trigger_pin) == HIGH) {//sostituire la routine del grilletto con una routine degli interrupt
     // Send message via ESP-NOW
     digitalWrite(light, HIGH);
     delay(100);
