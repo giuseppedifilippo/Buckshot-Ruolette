@@ -2,15 +2,14 @@
 # doubly Circular linked list.
 #modulo per gestire i giocatori attraverso una lista concatenata circolare doppia
 class Node:
-    def __init__(self, x,lives):
-        self.data = x
-        self.lives = lives
+    def __init__(self, player):
+        self.data = player
         self.next = None
         self.prev = None
 
 
-def insertAtBeginning(head, newData, newlives):
-    newNode = Node(newData,newlives)
+def insertAtBeginning(head, newData):
+    newNode = Node(newData)
 
     if head is None:
 
@@ -47,12 +46,12 @@ def printList(head):
 
 
 # Linked List : 10<->20<->30
-head = Node(10,10)
-head.next = Node(20,20)
+head = Node(10)
+head.next = Node(20)
 head.next.prev = head
-head.next.next = Node(30,40)
+head.next.next = Node(30)
 head.next.next.prev = head.next
 head.next.next.next = head
 head.prev = head.next.next
 
-head = insertAtBeginning(head, 5, 10)
+head = insertAtBeginning(head, 5)
