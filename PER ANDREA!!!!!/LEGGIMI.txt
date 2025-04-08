@@ -1,0 +1,7 @@
+cose che devi fare:
+-scrivi un codice Arduino che riceve da seriale degli input(decidi tu come codificare i messaggi, mi adatterò più piccoli meglio è come la sintassi del GCODE
+dacci un occhiata) 
+-la scheda non deve mandare nessun messaggio indietro
+-al momento devi occuparti di creare del codice che dato un input(il numero del giocatore) rimuova una vita dall indicatore delle sue vite
+	che usa una strip led ws2812b neopixel, usa la libreria FASTLED che è la più facile
+-aggiungerò altra man mano che finisco di progettare i modelli
