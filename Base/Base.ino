@@ -6,16 +6,12 @@ sparato carico o a salve*/
 /*Se vuoi capire un pochino di più di sta roba cerca FASTLED che è la libreria più usata per controllare led RGB*/
 /*e anche ESP NOW che è il protocollo di comunicazione wireless, ci sta una cartella nella repo chiamata PUSHBUTTON che è un esempio di comunicazione 
 unidirezionale ma in questo progetto la comunicazione sarà bidirezionale
-
-di sto passo finisco il codice prima che tu possa metterci le mani
 //BISMILLAH
-TRERKA
 /*PER ME*/
 //RICORDA BENE SE IMPOSTI INPUT_PULLUP VA LOW QUANDO CONNESSO A GND PREMENDO IL PULSANTE,
 // SE INVECE IMPOSTI INPUT_PULLDOWN VA HIGH QUANDO PREMI IL PULSANTE CONNESSO A VCC VA HIGH
 /*ALTRA COSA DA RICORDARE*/
 //SU ESP32 I GPIO CON PULLDOWN INTERNO SONO TUTTI QUELLI NON SPECIALI
-//sono assolutamente cucinato mi sa che la memoria dell esp non basta
 #include <esp_now.h>
 #include <WiFi.h>
 #include <FastLED.h>
