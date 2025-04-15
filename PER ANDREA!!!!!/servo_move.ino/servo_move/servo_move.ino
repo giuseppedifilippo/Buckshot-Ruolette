@@ -1,3 +1,10 @@
+/*
+Wiring:
+  Black -> Ground
+  Red -> 5V
+  Yellow -> pin data
+*/
+
 #include <Servo.h>
 
 Servo myservo;
