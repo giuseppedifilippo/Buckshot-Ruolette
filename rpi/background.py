@@ -13,3 +13,4 @@ elif platform == "linux" :
 #aggiungere l altro elif nel caso sia linux
 playsound(universal_path)
 
+

@@ -4,7 +4,7 @@
 #include <MPU6050_light.h>
 
 MPU6050 mpu{ Wire };
-int trigger_pin = 15;    //pin su cui è collegato l'interruttore del grilletto
+int trigger_pin = 16;    //pin su cui è collegato l'interruttore del grilletto
 int light = 34;          //pin per i led che simulano il flash del fucile
 int recalibration = 35;  //pin collegato a un interrupt che avvia la ricalibrazione del mpu6050
 byte aiming;
@@ -17,11 +17,11 @@ void Recalibrate() {
 
 void setup() {
   Serial.begin(115200);
-  pinMode(trigger_pin, INPUT_PULLDOWN);
+  pinMode(trigger_pin, INPUT_PULLUP);
   pinMode(light, OUTPUT);
   pinMode(recalibration, INPUT_PULLDOWN);
   attachInterrupt(digitalPinToInterrupt(recalibration), Recalibrate, RISING);
-  attachInterrupt(digitalPinToInterrupt(trigger_pin), Send, RISING);
+  
   Wire.begin();
   byte status = mpu.begin();
   Serial.print(F("MPU6050 status: "));
@@ -54,5 +54,8 @@ void loop() {
       aiming = '00';
     }
     timer = millis();
+  }
+  if (digitalRead(trigger_pin) == LOW) {
+    Serial.println(aiming);
   }
 }
