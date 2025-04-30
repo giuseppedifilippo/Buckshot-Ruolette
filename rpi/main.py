@@ -1,14 +1,21 @@
 from playsound3 import playsound
 import serial, LIB
 import RPi.GPIO as GPIO
+from time import sleep
 
 global nextTurn
 nextTurn = False
 global currentPlayer
 current_player, players = LIB.startup()
 
+
+
+#Serial Begin
+esp = serial.Serial('COM9', 115200, )
+arduino = serial.Serial('/dev/ttyUSB1', 115200, )
+
 #ISR che si avvia quando viene premuto il grilleto
-def ISR():
+def isr():
     if curr == 1:
         playsound(r"C:\Users\giuseppe\Desktop\Buckshot-Ruolette\rpi\sounds\audio_temp gunshot_live.wav", block=False)
     elif curr == 0:
@@ -18,24 +25,20 @@ def ISR():
         return
     #aggiungere sequenza che in base al numero del bersaglio colpito consulta la dcll e trova il giocatore colpito
     mex = int(esp.readline().decode())
-
-    target = 0
+    temp = currentPlayer
     for i in range(1, mex + 1):
-        target = i
+        temp = temp.next
 
-    LIB.subtract(target, players)
+
+    LIB.subtract(temp.data, players)
     nextTurn = True
     return
 
 #pin setting
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-GPIO.add_event_detect(17, GPIO.FALLING, callback=ISR, bouncetime=200)
+GPIO.add_event_detect(17, GPIO.FALLING, callback=isr(), bouncetime=200)
 GPIO.setup(18, GPIO.OUT)
-
-#Serial Begin
-esp = serial.Serial('COM9', 115200, )
-arduino = serial.Serial('/dev/ttyUSB1', 115200, )
 
 mag = LIB.new_mag()
 
@@ -47,10 +50,12 @@ while True:
     esp.write(curr.encode())
     mag = mag[1:]
 
-    p
-    #cambia il giocatore attuale
+
+    #passa il turno al prossimo giocatore
     if nextTurn:
         current_player = current_player.next
         arduino.write("next".encode())
         nextTurn = False
-        #aggiunge messaggio all esp per ricalibrare l MPU tramite interrupt
+        GPIO.output(18, GPIO.HIGH)
+        sleep(0.1)
+        GPIO.output(18, GPIO.LOW)
