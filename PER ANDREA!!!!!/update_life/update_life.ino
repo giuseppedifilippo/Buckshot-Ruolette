@@ -1,17 +1,24 @@
 #include <FastLED.h>
 
 #define n_led 8
-#define data_pin 3
+#define n_player 4
+#define data_pin_g1 3
+#define data_pin_g2 4
+#define data_pin_g3 5
+#define data_pin_g4 6
 
-int life=8;
-CRGB leds[n_led];
+int life[n_player]; //inizializzo un array di vite che contiene il numero di queste per ogni giocatore
+CRGB leds[n_player][n_led];
 String action="";
-String ins[3];
+String ins[3]; //array che contiene le parti della stringa inserita in seriale
 //lifes and player indicated by instruction
 int lifes_ins = 0;
 int player = 0;
+//numero del giocatore all'interno dell'array di giocatori
+int player_matrix = 0;
 
 void checkSerial(){
+  //in questo modo l'esecuzione non viene bloccata dall'attesa della seriale
   if (Serial.available()) {
     action = Serial.readStringUntil('\n');
     action.trim();
@@ -26,47 +33,61 @@ void checkSerial(){
 }
 
 void update_life(){
-  lifes_ins = ins[1].toInt();
-  player = ins[2].toInt(); // utile se hai un array di vite
+  if(ins[0]!="" && ins[1]!="" && ins[2]!=""){
+    lifes_ins = ins[1].toInt(); 
+    player = ins[2].toInt();
+    String cmd = ins[0];
+    player_matrix = player -1;
 
-  String cmd = ins[0];
-
-  if (cmd == "rm") {
-    life -= lifes_ins;
-  } 
-  else if (cmd == "add" && (life + lifes_ins) <= n_led) {
-    life += lifes_ins;
+    if (cmd == "rm") {
+      life[player_matrix] -= lifes_ins;
+      if (life[player_matrix] < 0){
+        life[player_matrix] = 0;
+      } 
+    } else if (cmd == "add" && (life[player_matrix] + lifes_ins) <= n_led) {
+      life[player_matrix] += lifes_ins;
+    }
+    action = "";
+  } else{
+    return;
   }
-  action = "";
 }
 
 void update_led(){
-  for(int i = 0; i<n_led; i++){
-    if(i<life){
-      leds[i] = CRGB::Green;
-    }else{
-      leds[i] = CRGB::Black;
+  for(int i = 0; i < n_led; i++) {
+    if(i < life[player_matrix]){
+      leds[player_matrix][i] = CRGB::Green;
+    } else {
+      leds[player_matrix][i] = CRGB::Black;
     }
   }
   FastLED.show();
 }
 
 void clearLed(){
-  for(int i=0; i<n_led; i++){
-    leds[i]=CRGB::Black;
+  for(int j=0; j<n_player; j++){
+    for(int i=0; i<n_led; i++){
+      leds[j][i]=CRGB::Black;
+    }
   }
 }
 
 void setup() {
-  FastLED.addLeds<WS2812B, data_pin, RGB>(leds, n_led);  
+  FastLED.addLeds<WS2812B, data_pin_g1, RGB>(leds[0], n_led);
+  FastLED.addLeds<WS2812B, data_pin_g2, RGB>(leds[1], n_led);
+  FastLED.addLeds<WS2812B, data_pin_g3, RGB>(leds[2], n_led);
+  FastLED.addLeds<WS2812B, data_pin_g4, RGB>(leds[3], n_led);  
+  for(int i=0; i<n_player; i++){
+    life[i]=n_led;
+  }
   Serial.begin(9600);
   clearLed();
 }
 
 void loop() {
   checkSerial();
-  update_led();
   if(action != ""){
     update_life();
+    update_led();
   }
 }
