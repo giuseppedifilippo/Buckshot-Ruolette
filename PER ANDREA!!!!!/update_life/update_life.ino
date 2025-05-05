@@ -1,11 +1,16 @@
 #include <FastLED.h>
 
-#define n_led 8
+#define n_led 12
 #define n_player 4
 #define data_pin_g1 3
 #define data_pin_g2 4
 #define data_pin_g3 5
 #define data_pin_g4 6
+#define data_pin_rele1 7
+#define data_pin_rele2 8
+#define data_pin_rele3 9
+#define data_pin_rele4 10
+#define time_zapping 2000
 
 int life[n_player]; //inizializzo un array di vite che contiene il numero di queste per ogni giocatore
 CRGB leds[n_player][n_led];
@@ -44,6 +49,7 @@ void update_life(){
       if (life[player_matrix] < 0){
         life[player_matrix] = 0;
       } 
+      zapping(player);
     } else if (cmd == "add" && (life[player_matrix] + lifes_ins) <= n_led) {
       life[player_matrix] += lifes_ins;
     }
@@ -55,7 +61,7 @@ void update_life(){
 
 void update_led(){
   for(int i = 0; i < n_led; i++) {
-    if(i < life[player_matrix]){
+    if(i < life[player_matrix]*2){
       leds[player_matrix][i] = CRGB::Green;
     } else {
       leds[player_matrix][i] = CRGB::Black;
@@ -70,6 +76,23 @@ void clearLed(){
       leds[j][i]=CRGB::Black;
     }
   }
+  FastLED.show();
+}
+
+void ledOn(){
+  for(int j=0; j<n_player; j++){
+    for(int i=0; i<n_led; i++){
+      leds[j][i]=CRGB::Green;
+    }
+  }
+  FastLED.show();
+}
+
+void zapping(int player){
+  player += 6;
+  digitalWrite(player, HIGH);
+  delay(time_zapping);
+  digitalWrite(player, LOW);
 }
 
 void setup() {
@@ -77,11 +100,12 @@ void setup() {
   FastLED.addLeds<WS2812B, data_pin_g2, RGB>(leds[1], n_led);
   FastLED.addLeds<WS2812B, data_pin_g3, RGB>(leds[2], n_led);
   FastLED.addLeds<WS2812B, data_pin_g4, RGB>(leds[3], n_led);  
+  clearLed();
   for(int i=0; i<n_player; i++){
     life[i]=n_led;
   }
+  ledOn();
   Serial.begin(9600);
-  clearLed();
 }
 
 void loop() {
