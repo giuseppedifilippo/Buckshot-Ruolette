@@ -11,9 +11,9 @@ from time import sleep
 
 global nextTurn
 nextTurn = False
-global currentPlayer
+global currentPlayer,mag
 current_player, players = LIB.startup()
-
+mag = LIB.new_mag()
 
 
 #Serial Begin
@@ -47,19 +47,19 @@ GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.add_event_detect(17, GPIO.FALLING, callback=isr(), bouncetime=200)
 GPIO.setup(18, GPIO.OUT)
 
-mag = LIB.new_mag()
+
 
 while True:
-
+    LIB.check(players)
     if len(mag) == 0:
         mag = LIB.new_mag()
     curr = mag[0]
     esp.write(curr.encode())
-    mag = mag[1:]
 
 
     #passa il turno al prossimo giocatore
     if nextTurn:
+        mag = mag[1:]
         current_player = current_player.next
         arduino.write("next".encode())
         nextTurn = False

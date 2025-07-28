@@ -6,6 +6,11 @@
 #define data_pin_g2 4
 #define data_pin_g3 5
 #define data_pin_g4 6
+#define data_pin_rele1 7
+#define data_pin_rele2 8
+#define data_pin_rele3 9
+#define data_pin_rele4 10
+#define time_zapping 2000
 
 int life[n_player]; //inizializzo un array di vite che contiene il numero di queste per ogni giocatore
 CRGB leds[n_player][n_led];
@@ -17,6 +22,7 @@ int player = 0;
 //numero del giocatore all'interno dell'array di giocatori
 int player_matrix = 0;
 
+//controlla che venga inviato un messaggio in seriale e suddivide la stringa nelle tre parti dell'istruzione
 void checkSerial(){
   //in questo modo l'esecuzione non viene bloccata dall'attesa della seriale
   if (Serial.available()) {
@@ -32,11 +38,14 @@ void checkSerial(){
   }
 }
 
+//aggiorna il numero delle vite quando viene inviato un messaggio in seriale
+//quando la vita viene persa richiama la funzione zapping per folgorare il giocatore
+//il messaggio è formattato così: istruzione numero_vite numero_giocatore. Le istruzioni possono essere "rm" per rimuovere e "add" per aggiungere
 void update_life(){
   if(ins[0]!="" && ins[1]!="" && ins[2]!=""){
+    String cmd = ins[0];
     lifes_ins = ins[1].toInt(); 
     player = ins[2].toInt();
-    String cmd = ins[0];
     player_matrix = player -1;
 
     if (cmd == "rm") {
@@ -44,6 +53,7 @@ void update_life(){
       if (life[player_matrix] < 0){
         life[player_matrix] = 0;
       } 
+      zapping(player);
     } else if (cmd == "add" && (life[player_matrix] + lifes_ins) <= n_led) {
       life[player_matrix] += lifes_ins;
     } else if (cmd == "clear") {
@@ -55,6 +65,7 @@ void update_life(){
   }
 }
 
+//accende un numero di led corrispondente al numero di vite (N.B. ogni vita è indicata da due led)
 void update_led(){
   for(int i = 0; i < n_led; i++) {
     if(i < life[player_matrix]){
@@ -66,6 +77,7 @@ void update_led(){
   FastLED.show();
 }
 
+//resetta il numero di led accesi spegnendoli tutti
 void clearLed(){
   for(int j=0; j<n_player; j++){
     for(int i=0; i<n_led; i++){
@@ -76,15 +88,20 @@ void clearLed(){
 }
 
 void setup() {
+  pinMode(data_pin_rele1, OUTPUT);
+  pinMode(data_pin_rele2, OUTPUT);
+  pinMode(data_pin_rele3, OUTPUT);
+  pinMode(data_pin_rele4, OUTPUT);
   FastLED.addLeds<WS2812B, data_pin_g1, RGB>(leds[0], n_led);
   FastLED.addLeds<WS2812B, data_pin_g2, RGB>(leds[1], n_led);
   FastLED.addLeds<WS2812B, data_pin_g3, RGB>(leds[2], n_led);
   FastLED.addLeds<WS2812B, data_pin_g4, RGB>(leds[3], n_led);  
+  clearLed();
   for(int i=0; i<n_player; i++){
     life[i]=n_led;
   }
+  reset(6);
   Serial.begin(9600);
-  clearLed();
 }
 
 void loop() {
