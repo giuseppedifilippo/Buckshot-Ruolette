@@ -23,7 +23,7 @@ def subtract(player, map):
     if map[player]["lives"] == 0:
         map[player]["status"] = False
         #send zapping sequence
-        arduino.write(("rm" + str(player)).encode())
+        arduino.write(player.encode())
 
 #genera la sequenza di giocatori
 def startup() :
@@ -37,26 +37,4 @@ def startup() :
         else :
             players[i] = {"lives": 3, "status": True}
     return el, players
-
-#controlla che ci siano le condizioni per la vittoria di un giocatore e poi resetta il gioco
-def check(mappa) :
-    count = 0
-    for k,v in range(mappa) :
-        if v.lives == 0 :
-            count+=1
-
-    if count == len(mappa) -1 :
-        print("winner")
-        #aggiungere parte per resettare il gioco
-        return True #nel caso rimane solo uno in vita manda questo check per dire al main di resettare il gioco
-
-
-
-    return False #nel caso rimane più di un giocatore in vita continua il flusso n
-
-
-
-
-
-
 
