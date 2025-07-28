@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
+=======
+from asyncio import timeout
+from unittest import case
+import random, DCLL, serial
+>>>>>>> Stashed changes
 from playsound3 import playsound
 import serial, LIB
 import RPi.GPIO as GPIO
@@ -14,6 +20,7 @@ current_player, players = LIB.startup()
 esp = serial.Serial('COM9', 115200, )
 arduino = serial.Serial('/dev/ttyUSB1', 115200, )
 
+<<<<<<< Updated upstream
 #ISR che si avvia quando viene premuto il grilleto
 def isr():
     if curr == 1:
@@ -59,3 +66,37 @@ while True:
         GPIO.output(18, GPIO.HIGH)
         sleep(0.1)
         GPIO.output(18, GPIO.LOW)
+=======
+
+#crea una nuova sequenza di munizioni
+def new_mag():
+    base = random.randint(1, 254)
+    if base in forbidden:
+        return new_mag()
+    else:
+        return bin(base)
+    #manda sequenza al sistema per mostrare le cartucce
+
+def subtract(player, map):
+    map[player]["lives"] -= 1
+    if map[player]["lives"] == 0:
+        map[player]["status"] = False
+        #send zapping sequence
+
+#genera la sequenza di giocatori
+def startup() :
+    el = None
+    players = {1: {"lives": 3, "status": True}}
+    for i in range(1, int(input("Numero giocatori[2-4] : "))+1 ):
+        el = DCLL.insertAtBeginning(el, i)
+        el = el.next
+        if i == 1 :
+            continue
+        else :
+            players[i] = {"lives": 3, "status": True}
+    return el, players
+
+
+serial_port = '/dev/ttyUSB0'
+ser = serial.Serial(serial_port, 9600)
+>>>>>>> Stashed changes

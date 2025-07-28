@@ -1,6 +1,6 @@
 #include <FastLED.h>
 
-#define n_led 8
+#define n_led 12
 #define n_player 4
 #define data_pin_g1 3
 #define data_pin_g2 4
@@ -46,9 +46,11 @@ void update_life(){
       } 
     } else if (cmd == "add" && (life[player_matrix] + lifes_ins) <= n_led) {
       life[player_matrix] += lifes_ins;
+    } else if (cmd == "clear") {
+      clearLed();
     }
     action = "";
-  } else{
+  } else {
     return;
   }
 }
@@ -56,7 +58,7 @@ void update_life(){
 void update_led(){
   for(int i = 0; i < n_led; i++) {
     if(i < life[player_matrix]){
-      leds[player_matrix][i] = CRGB::Green;
+      leds[player_matrix][i] = CRGB::Red;
     } else {
       leds[player_matrix][i] = CRGB::Black;
     }
@@ -70,6 +72,7 @@ void clearLed(){
       leds[j][i]=CRGB::Black;
     }
   }
+  FastLED.show();
 }
 
 void setup() {
