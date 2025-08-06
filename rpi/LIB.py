@@ -6,6 +6,8 @@ arduino = serial.Serial('/dev/ttyUSB1', 115200, )
 forbidden = [2, 3, 7, 15, 31, 61, 127]
 random.seed()
 
+#data una sequenza corretta di munizioni ne estrae il numero di blank e live e le manda all arduino per mostrarlo
+
 
 #crea una nuova sequenza di munizioni
 def new_mag():
@@ -13,28 +15,26 @@ def new_mag():
     if base in forbidden:
         return new_mag()
     else:
-        arduino.write(bin(base).encode())
-        return bin(base)
+        seq = bin(base)
+        arduino.write(random.sample(seq, len(seq)).encode())
+        return seq
     #manda sequenza al sistema per mostrare le cartucce
 
 
-def subtract(player, map):
-    map[player]["lives"] -= 1
-    if map[player]["lives"] == 0:
-        map[player]["status"] = False
-        #send zapping sequence
-        arduino.write(player.encode())
+def subtract(node, num):
+    target = node
+    for i in range(num) :
+        if i == num :
+            target.lives -=1
+        else :
+            target= target.next
+    arduino.write(f"zp {target.data}".encode())
+
 
 #genera la sequenza di giocatori
 def startup() :
     el = None
-    players = {1: {"lives": 3, "status": True}}
     for i in range(1, int(input("Numero giocatori[2-4] : "))+1 ):
-        el = DCLL.insertAtBeginning(el, i)
+        el = DCLL.insertAtBeginning(el, i, 6, True)
         el = el.next
-        if i == 1 :
-            continue
-        else :
-            players[i] = {"lives": 3, "status": True}
-    return el, players
-
+    return el
