@@ -1,4 +1,5 @@
 #include <FastLED.h>
+#include "servo_move.h"
 
 #define n_led 12
 #define n_player 4
@@ -86,14 +87,21 @@ void clearLed(){
 }
 
 
-//resettta i led al numero di vite che viene passato come parametro
-void reset(int param){
+//resettta i led del giocatore passato come parametro al numero di vite passate
+//se il valore passato è 0 resetta le vite di tutti i giocatori
+void reset(int n_vite, int player){
   clearLed();
-  if(param <=6){
-    param*=2;
-    for(int i=0; i<n_player; i++){
-      for(int j=0; j<param; j++){
-        leds[i][j]=CRGB::Green;
+  if(n_vite <=6){
+    n_vite*=2;
+    if(player==0){
+      for(int i=0; i<n_player; i++){
+        for(int j=0; j<n_vite; j++){
+          leds[i][j]=CRGB::Green;
+        }
+      }
+    }else{
+      for(int j=0; j<n_vite; j++){
+          leds[player][j]=CRGB::Green;
       }
     }
     FastLED.show();
@@ -111,6 +119,7 @@ void zapping(int player){
 }
 
 void setup() {
+  setup_servos();
   pinMode(data_pin_rele1, OUTPUT);
   pinMode(data_pin_rele2, OUTPUT);
   pinMode(data_pin_rele3, OUTPUT);
@@ -130,6 +139,9 @@ void setup() {
 void loop() {
   checkSerial();
   if(action != ""){
+    if(action[0]=='s' && action[1]=='h'){
+      mostra_shell(action.substring(3));
+    }
     update_life();
     update_led();
   }
