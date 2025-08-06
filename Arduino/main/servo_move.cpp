@@ -16,10 +16,6 @@ void setup_servos(){
 }
 
 void mostra_shell(String shell){
-  // Nota: shell.indexOf('\0') non è tipico per String, che non è null-terminated.
-  // Se 'shell' è un oggetto String, usa shell.length()
-  // Se 'shell' è un char[], allora indexOf('\0') ha senso.
-  // Assumo che 'shell' sia un oggetto String e che tu voglia iterare sulla sua lunghezza.
   int len = shell.length(); 
   for(int i = 0; i < len; i++){
     if(shell[i]=='0'){
