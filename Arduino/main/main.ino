@@ -6,6 +6,8 @@ shl stringa binaria -> comando per mostrare le shell. La stringa binaria indica 
 add n°vite n°giocatore -> comando per aggiungere al giocatore indicato il numero di vite indicato
 
 rm n°vite n°giocatore -> comando per togliere al giocatore indicato il numero di vite indicato
+
+zap n°giocatore -> comando per zappare il giocatore indicato
 */
 
 #include "update_life.h"
@@ -41,9 +43,9 @@ void checkSerial(){
     action.trim();
 
     //divide la stringa del comando in 3 parti se si tratta di add o rmv 
-    //altrimenti divide in due parti se si tratta di visualizzare le shell
+    //altrimenti divide in due parti se si tratta di visualizzare le shell o di zappare
     int div = 0;
-    if(action[0]=='s' && action[1]=='h' && action[2]=='l'){
+    if(action.substring(0, 3), "shl" || action.substring(0, 3), "zap"){
       div = 2;
     }else{
       div = 3;
@@ -78,15 +80,13 @@ void loop() {
   checkSerial();
 
   if(action != ""){
-    switch(ins_command){
-    	case "shl":
-        	mostra_shell(ins_command[1]);
-    	break; 
-
-      	default:
-        	update_life();
-        	update_led();
-		break;
+    if(ins_command=="shl"){
+        mostra_shell(ins_command[1]);
+    } else if(ins_command=="zap"){
+          zapping(ins_command[1].toInt());
+    }else{
+        update_life();
+        update_led();
     }
   }
 }
