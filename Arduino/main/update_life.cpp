@@ -7,7 +7,7 @@
 extern int life[n_player];
 extern CRGB leds[n_player][n_led];
 
-extern String action="";
+extern String action;
 extern String ins_command[3]; 
 
 //vita e giocatore indicata dall'istruzione di aggiunta e rimozione
@@ -29,7 +29,6 @@ void zapping(int player){
 //quando la vita viene persa richiama la funzione zapping per folgorare il giocatore
 //il messaggio è formattato così: istruzione numero_vite numero_giocatore. Le istruzioni possono essere "rmv" per rimuovere e "add" per aggiungere
 void update_life(){
-  if( ins_command[0]!="" && ins_command[1]!="" && ins_command[2]!=""){
     String cmd = ins_command[0];
     lifes_ins = ins_command[1].toInt(); 
     player = ins_command[2].toInt();
@@ -45,9 +44,6 @@ void update_life(){
       life[player_matrix] += lifes_ins;
     }
     action = "";
-  } else{
-    return;
-  }
 }
 
 //accende un numero di led corrispondente al numero di vite (N.B. ogni vita è indicata da due led)
