@@ -11,6 +11,7 @@ elif platform == "linux" :
     linux_path = r"sounds/General_Release.mp3"
     universal_path = Path(linux_path)
 #aggiungere l altro elif nel caso sia linux
-playsound(universal_path)
+playsound(universal_path, False)
+
 
 

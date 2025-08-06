@@ -16,11 +16,11 @@ def new_mag():
         return new_mag()
     else:
         seq = bin(base)
-        arduino.write(random.sample(seq, len(seq)).encode())
+        arduino.write(random.sample(seq, len(seq)).encode())#la sequenza viene randomizzataa ancora e mandata all arduino per mostrarle ai giocatori
         return seq
     #manda sequenza al sistema per mostrare le cartucce
 
-
+#sottrae una vita dal giocatore colpito e manda il messaggio per dare la scossa al giocatore colpito
 def subtract(node, num):
     target = node
     for i in range(num) :
@@ -31,10 +31,17 @@ def subtract(node, num):
     arduino.write(f"zp {target.data}".encode())
 
 
-#genera la sequenza di giocatori
+#genera la sequenza di giocatori e le informazioni relative a loro in base all input
 def startup() :
     el = None
-    for i in range(1, int(input("Numero giocatori[2-4] : "))+1 ):
-        el = DCLL.insertAtBeginning(el, i, 6, True)
+    giocatori = int(input("inserire numero giocatori (2-4)"))
+    vite_iniziali = int(input("inserire numero vite (1-6)"))
+    for i in range(0,4) :
+        if i < giocatori :
+            el = DCLL.insertAtBeginning(el, i, vite_iniziali, True)
+        else :
+            el = DCLL.insertAtBeginning(el, i, vite_iniziali, False)
         el = el.next
     return el
+
+
