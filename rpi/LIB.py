@@ -23,12 +23,17 @@ def new_mag():
 #sottrae una vita dal giocatore colpito e manda il messaggio per dare la scossa al giocatore colpito
 def subtract(node, num):
     target = node
+    dead = 0
     for i in range(num) :
         if i == num :
-            target.lives -=1
+            target.lives -= 1
+            if target.lives == 0 :
+                dead = 1
+            break
         else :
-            target= target.next
+            target = target.next
     arduino.write(f"zp {target.data}".encode())
+    return dead
 
 
 #genera la sequenza di giocatori e le informazioni relative a loro in base all input
@@ -42,6 +47,7 @@ def startup() :
         else :
             el = DCLL.insertAtBeginning(el, i, vite_iniziali, False)
         el = el.next
-    return el
+    return el, giocatori
 
+#controlla
 
