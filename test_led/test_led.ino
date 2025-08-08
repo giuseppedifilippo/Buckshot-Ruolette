@@ -11,13 +11,12 @@ void setup(){
 
 void loop(){
   for(int i=0; i<12; i+=2){
-    led[i]=CRGB::Green;
-    led[i+1]=CRGB::Green;
+    fill_solid(&(led[i]), 2, CRGB::Green);
     FastLED.show();
     delay(1000);
   }
-  for(int i=0; i<12; i++){
-    led[i]=CRGB::Black;
+  for(int i=0; i<12; i++){ 
+    fill_solid(led, n_led, CRGB::Black);
   }
   FastLED.show();
 }
