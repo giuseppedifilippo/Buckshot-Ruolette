@@ -10,7 +10,7 @@ void setup(){
 }
 
 void loop(){
-  for(int i=0; i<6; i++){
+  for(int i=0; i<12; i+=2){
     led[i]=CRGB::Green;
     led[i+1]=CRGB::Green;
     FastLED.show();
