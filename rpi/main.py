@@ -21,15 +21,12 @@ global nextTurn
 nextTurn = False
 global currentPlayer
 round = 1
+BGM_track1 = r"sounds/General_Release.mp3"
+BGM_track2 = r"sounds\03. Before Every Load.mp3"
 
 # aggiungere seconda soundtrack per il round finale
-if platform == "win32":
-    win_path = r"sounds\General_Release.mp3"
-    universal_path = Path(win_path)
-elif platform == "linux":
-    linux_path = r"sounds/General_Release.mp3"
-    universal_path = Path(linux_path)
-BGM = playsound(universal_path, False)
+
+BGM = playsound(BGM_track1, False)
 
 # Serial Begin
 esp = serial.Serial('COM9', 115200, )
@@ -71,7 +68,7 @@ while True:
         dead = 0
     if round == 3:
         BGM.stop()
-        finalBGM = playsound(r"sounds\03. Before Every Load.mp3", False)
+        BGM = playsound(BGM_track2, False)
 
     # aggiungere check perchè il fucile sia posato sulla base
     # passa il turno al prossimo giocatore assicurandosi di saltare giocatori inattivi/morti e comanda la rotazione del base rotante
