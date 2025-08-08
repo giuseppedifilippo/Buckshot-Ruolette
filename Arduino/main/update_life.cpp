@@ -35,10 +35,9 @@ void update_life(){
     player_matrix = player -1;
 
     if (cmd == "rmv") {
-      life[player_matrix] -= lifes_ins;
-      if (life[player_matrix] < 0){
-        life[player_matrix] = 0;
-      } 
+      if(life[player_matrix]==0){
+        life[player_matrix] -= lifes_ins;
+      }
       zapping(player);
     } else if (cmd == "add" && (life[player_matrix] + lifes_ins) <= n_led) {
       life[player_matrix] += lifes_ins;
@@ -61,30 +60,24 @@ void update_led(){
 //resetta il numero di led accesi spegnendoli tutti
 void clearLed(){
   for(int j=0; j<n_player; j++){
-    for(int i=0; i<n_led; i++){
-      leds[j][i]=CRGB::Black;
-    }
+    fill_solid(leds[j], n_led, CRGB::Black);
   }
   FastLED.show();
 }
 
 
 //resettta i led del giocatore passato come parametro al numero di vite passate
-//se il valore passato per il giocatore è 0 resetta le vite di tutti i giocatori
+//se il valore passato per il giocatore è 0 imposta le vite di tutti i giocatori
 void reset(int n_vite, int player){
   clearLed();
   if(n_vite <=6){
     n_vite*=2;
     if(player==0){
       for(int i=0; i<n_player; i++){
-        for(int j=0; j<n_vite; j++){
-          leds[i][j]=CRGB::Green;
-        }
+        fill_solid(leds[i], n_vite, CRGB::Green);
       }
     }else{
-      for(int j=0; j<n_vite; j++){
-          leds[player][j]=CRGB::Green;
-      }
+      fill_solid(leds[player], n_vite, CRGB::Green);
     }
     FastLED.show();
   } else{
