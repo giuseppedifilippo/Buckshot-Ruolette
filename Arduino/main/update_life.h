@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 
-void update_life();
+void update_life(String ins_command[]);
 void update_led();
 void clearLed();
 void reset(int n_vite, int player);

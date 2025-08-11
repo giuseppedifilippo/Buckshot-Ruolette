@@ -1,33 +1,48 @@
-#include <Arduino.h>
-#include <Servo.h>
-#include "servo_move.h"
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
 
-// Dichiarazione dell'array di oggetti Servo
-Servo servos[8]; 
+// Creo il driver PCA9685 con indirizzo I²C predefinito 0x40
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
-// Array dei pin a cui sono collegati i servo (da 2 a 9)
-int servoPins[8] = {2, 3, 4, 5, 6, 7, 8, 9};
+// Definizione min e max in tick per il segnale dei servo
+#define SERVOMIN  150 // impulso minimo (~0°)
+#define SERVOMAX  600 // impulso massimo (~180°)
 
-void setup_servos(){
-  for (int i = 0; i < 8; i++) {
-    servos[i].attach(servoPins[i]); // Attacca ogni servo al suo pin
-    servos[i].write(0); // Opzionale: imposta tutti i servo a 0 gradi all'avvio
+// Canali PCA9685 dove sono collegati i servo
+int servoChannels[4] = {0, 1, 2, 3/*, 4, 5, 6, 7*/}; // 0-15 disponibili
+
+// Funzione per mappare gradi → tick PCA9685
+void setServoAngle(uint8_t channel, int angle) {
+  int pulse = map(angle, 0, 180, SERVOMIN, SERVOMAX);
+  pwm.setPWM(channel, 0, pulse);
+}
+
+void setup_servos() {
+  pwm.begin();
+  pwm.setPWMFreq(50); // 50 Hz per i servo standard
+  delay(10);
+
+  // Porta tutti i servo a 0°
+  for (int i = 0; i < 4; i++) {
+    setServoAngle(servoChannels[i], 0);
   }
 }
 
-void mostra_shell(String shell){
-  int len = shell.length(); 
-  for(int i = 0; i < len; i++){
-    if(shell[i]=='0'){
-      servos[i].write(120);
-    }else if(shell[i]=='1'){
-      servos[i].write(240);
-    }else{ // Se il carattere non è '0' o '1', imposta a 0
-      servos[i].write(0);
+void mostra_shell(String shell) {
+  int len = shell.length();
+  for (int i = 0; i < len && i < 4; i++) {
+    if (shell[i] == '0') {
+      setServoAngle(servoChannels[i], 60); // esempio: aperto
+    } else if (shell[i] == '1') {
+      setServoAngle(servoChannels[i], 120); // esempio: chiuso
+    } else {
+      setServoAngle(servoChannels[i], 0); // posizione di sicurezza
     }
   }
   delay(2000);
-  for(int i = 0; i < 8; i++){ // Assicurati che questo loop sia corretto per il numero di servo
-    servos[i].write(0);
+
+  // Riporta tutti a 0°
+  for (int i = 0; i < 4; i++) {
+    setServoAngle(servoChannels[i], 0);
   }
 }

@@ -15,6 +15,7 @@ void loop(){
     FastLED.show();
     delay(1000);
   }
+  
   for(int i=0; i<12; i++){ 
     fill_solid(led, n_led, CRGB::Black);
   }
