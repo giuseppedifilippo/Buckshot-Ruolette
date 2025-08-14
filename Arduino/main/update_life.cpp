@@ -2,7 +2,7 @@
 
 #define time_zapping 2000
 #define n_player 4
-#define n_led 8
+#define n_led 12
 
 extern int life[n_player];
 extern CRGB leds[n_player][n_led];

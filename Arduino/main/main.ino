@@ -117,5 +117,6 @@ void loop() {
         update_life(ins_command);
         update_led();
     }
+    action = ""; //resetto la stringa action per evitare che venga eseguito a ripetizione 
   }
 }
