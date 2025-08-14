@@ -67,7 +67,7 @@ void checkSerial(){
       if (ins_command[1] == "") {
         action = ""; // ignoro il comando
       }
-    } else if (cmd == "add" || cmd == "rmv" || cmd == "rm") {
+    } else if (cmd == "add" || cmd == "rmv") {
       if (ins_command[1] == "" || ins_command[2] == "") {
         action = ""; // ignoro il comando
       }
