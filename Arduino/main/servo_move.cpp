@@ -9,7 +9,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define SERVOMAX  600 // impulso massimo (~180°)
 
 // Canali PCA9685 dove sono collegati i servo
-int servoChannels[4] = {0, 1, 2, 3/*, 4, 5, 6, 7*/}; // 0-15 disponibili
+int servoChannels[8] = {0, 1, 2, 3, 4, 5, 6, 7}; 
 
 // Funzione per mappare gradi → tick PCA9685
 void setServoAngle(uint8_t channel, int angle) {

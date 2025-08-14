@@ -80,7 +80,6 @@ void checkSerial(){
 void setup() {
   Serial.begin(9600);
   delay(50);
-  Serial.println("Booting...");
 
   setup_servos();
 
@@ -104,7 +103,6 @@ void setup() {
   }
 
   reset(6, 0); // mostra inizialmente 6 vite per tutti
-  Serial.println("Ready");
 }
 
 void loop() {

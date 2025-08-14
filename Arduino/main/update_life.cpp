@@ -27,7 +27,6 @@ void zapping(int player){
 
 //aggiorna il numero delle vite quando viene inviato un messaggio in seriale
 //quando la vita viene persa richiama la funzione zapping per folgorare il giocatore
-//il messaggio è formattato così: istruzione numero_vite numero_giocatore. Le istruzioni possono essere "rmv" per rimuovere e "add" per aggiungere
 void update_life(String ins_cmd[]){
   String cmd = ins_cmd[0];
   lifes_ins = ins_cmd[1].toInt();
@@ -35,30 +34,18 @@ void update_life(String ins_cmd[]){
   player_matrix = player - 1;
 
   if (player_matrix < 0 || player_matrix >= n_player) {
-    Serial.println("update_life: player fuori range");
     action = "";
     return;
   }
 
-  if (cmd == "rmv" || cmd == "rm") {
+  if (cmd == "rmv") {
     // sottrai senza andare sotto 0
     life[player_matrix] = max(0, life[player_matrix] - lifes_ins);
-    Serial.print("Rimosse ");
-    Serial.print(lifes_ins);
-    Serial.print(" vite a player ");
-    Serial.println(player);
     zapping(player); // folgora il giocatore
   } else if (cmd == "add") {
     // non superare n_led/2 (numero max vite)
     int maxLives = n_led / 2;
     life[player_matrix] = min(maxLives, life[player_matrix] + lifes_ins);
-    Serial.print("Aggiunte ");
-    Serial.print(lifes_ins);
-    Serial.print(" vite a player ");
-    Serial.println(player);
-  } else {
-    Serial.print("Comando update_life sconosciuto: ");
-    Serial.println(cmd);
   }
   action = "";
 }
