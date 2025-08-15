@@ -11,7 +11,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 // Canali PCA9685 dove sono collegati i servo
 int servoChannels[8] = {0, 1, 2, 3, 4, 5, 6, 7}; 
 
-// Funzione per mappare gradi → tick PCA9685
+// Funzione per mappare gradi → tick PCA9685  
 void setServoAngle(uint8_t channel, int angle) {
   int pulse = map(angle, 0, 180, SERVOMIN, SERVOMAX);
   pwm.setPWM(channel, 0, pulse);
