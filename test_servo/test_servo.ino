@@ -34,11 +34,6 @@ void loop() {
   }
   delay(1000);
   for(int i=0; i<8; i++){
-    setServoAngle(servochannel[i], 120);
-    delay(500);
-  }
-  delay(1000);
-  for(int i=0; i<8; i++){
     setServoAngle(servochannel[i], 0);
   }
   delay(1000);
