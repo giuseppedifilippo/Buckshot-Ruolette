@@ -7,7 +7,7 @@ MPU6050 mpu{ Wire };
 int trigger_pin = 16;    //pin su cui è collegato l'interruttore del grilletto
 int light = 34;          //pin per i led che simulano il flash del fucile
 int recalibration = 35;  //pin collegato a un interrupt che avvia la ricalibrazione del mpu6050
-byte aiming;
+String aiming;
 
 
 void Recalibrate() {
@@ -44,18 +44,18 @@ void loop() {
   //tutto sto pappone serve a capire in che direzione sta puntando il fucile
   if ((millis() - timer) > 10) {  //aggiorna la posizione ogni 10ms
     if (mpu.getAngleZ() < 20 && mpu.getAngleZ() > -20 && mpu.getAngleX() < 90) {
-      aiming = '11';
+      aiming = "2";
     } else if (mpu.getAngleZ() < -20 && mpu.getAngleZ() > -60 && mpu.getAngleX() < 90) {
-      aiming = '10';
+      aiming = "3";
     } else if (mpu.getAngleZ() < 60 && mpu.getAngleZ() > 20 && mpu.getAngleX() < 90) {
-      aiming = '01';
+      aiming = "4";
     }
     if (mpu.getAngleX() > 90 && mpu.getAngleX() < 180) {
-      aiming = '00';
+      aiming = "1";
     }
     timer = millis();
   }
   if (digitalRead(trigger_pin) == LOW) {
-    Serial.println(aiming);
+    Serial.println("st " + aiming);
   }
 }

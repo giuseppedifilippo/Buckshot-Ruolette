@@ -84,9 +84,6 @@ while True:
                 rotation_string += 1
         arduino.write(f"rt {rotation_string}".encode())
         nextTurn = False
-        # non ricordo cosa faccia ma serve a qualcosa che non ricordo
-        GPIO.output(18, GPIO.HIGH)
-        sleep(0.1)
-        GPIO.output(18, GPIO.LOW)
+
 
 # aggiungere Round Check

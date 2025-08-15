@@ -166,7 +166,7 @@ class NumberPad:
         self.display.config(text=display_text, bg='black')
 
 def startup_gui(root):
-    global giocatori, vite_iniziali
+    int giocatori, vite_iniziali
     
     # Configura finestra a schermo intero
     root.attributes('-fullscreen', True)
@@ -200,7 +200,8 @@ def startup_gui(root):
     
     # Frame per i bottoni di controllo
     control_frame = tk.Frame(main_frame, bg='#1a1a1a')
-    control_frame.pack(pady=50)
+    control_frame.pack(pady=50
+
     
     # Bottone per avviare il gioco
     def start_game():
@@ -239,20 +240,12 @@ def startup_gui(root):
         root.destroy()
     except:
         pass
-
-    el = None
-    for i in range(0, 4):
-        if i < giocatori.get():
-            el = DCLL.insertAtBeginning(el, i, vite_iniziali.get(), True)
-        else:
-            el = DCLL.insertAtBeginning(el, i, vite_iniziali.get(), False)
-        el = el.next
-    return el, giocatori.get()
+    #spostare in startup gui
 
 def reset_players(head_player):
     current = head_player
     while True:
-        current.status = True
+        current.lives = 6
         current = current.next
         if current == head_player:
             break
