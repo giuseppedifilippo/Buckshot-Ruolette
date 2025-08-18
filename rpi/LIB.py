@@ -1,8 +1,12 @@
 
-import random, DCLL
-import serial
+import random, DCLL, serial
+from gpiozero import LED
+from gpiozero import Button
 arduino = serial.Serial('/dev/ttyUSB1', 115200, )
-
+esp = serial.Serial('/dev/ttyUSB0', 115200, )
+ralay_muzzle = 18
+rele = LED(ralay_muzzle)
+base = Button(19)
 forbidden = [2, 3, 7, 15, 31, 61, 127]
 random.seed()
 
@@ -21,11 +25,13 @@ def new_mag():
     #manda sequenza al sistema per mostrare le cartucce
 
 #sottrae una vita dal giocatore colpito e manda il messaggio per dare la scossa al giocatore colpito
-def subtract(node, num):
+#node: puntatore al nodo corrente della lista concatenata
+#id: identificatore del giocatore colpito
+def subtract(node, id):
     target = node
     dead = 0
-    for i in range(num) :
-        if i == num :
+    for i in range(id) :
+        if i == id :
             target.lives -= 1
             if target.lives == 0 :
                 dead = 1
@@ -49,5 +55,23 @@ def startup() :
         el = el.next
     return el, giocatori
 
-#controlla
+#controlla il rele che guida l accensione dell finto muzzle flash
+def relay(val) :
+    if val == 1 :
+        rele.on()
+    else :
+        rele.off()
 
+def reset(node, lives) :
+    curr = node
+    while True :
+        if curr.status :
+            curr.lives = lives
+        if curr != node :
+            break
+
+
+#controlla che il fucile sia sulla base prima di ricalibrare il sensore
+def recalibrate() :
+    base.wait_for_active()
+    esp.write("rc".encode())
