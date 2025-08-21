@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "f0b8efba-a514-4e83-8bb3-996f9f347897")
-	(paper "A4")
+	(paper "User" 330.2 279.4)
 	(lib_symbols
 		(symbol "LED:WS2812B"
 			(pin_names
@@ -3062,67 +3062,57 @@
 	)
 	(text "5V Single relay\n"
 		(exclude_from_sim no)
-		(at 198.12 95.758 0)
+		(at 266.7 148.844 0)
 		(effects
 			(font
 				(size 0.8382 0.8382)
 			)
 		)
-		(uuid "22c1ab32-dd96-41e9-bc35-626ebe653df6")
+		(uuid "04df5356-abbc-4d6f-a0fa-619a3555d16e")
 	)
 	(text "P2\n"
 		(exclude_from_sim no)
-		(at 234.442 71.628 0)
+		(at 303.022 144.018 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "4d1848e6-f37a-4eea-9684-e08059d046e3")
-	)
-	(text "P1\n"
-		(exclude_from_sim no)
-		(at 234.696 51.054 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5e85af35-9c4d-4e6c-b255-d796d5faa74e")
-	)
-	(text "5V Single relay\n"
-		(exclude_from_sim no)
-		(at 198.12 115.824 0)
-		(effects
-			(font
-				(size 0.8382 0.8382)
-			)
-		)
-		(uuid "770f7e9f-5141-4b9b-92b8-73140418ceaa")
-	)
-	(text "5V Single relay\n"
-		(exclude_from_sim no)
-		(at 198.12 56.134 0)
-		(effects
-			(font
-				(size 0.8382 0.8382)
-			)
-		)
-		(uuid "80e6dfb3-111a-445d-be4f-c7608f5cc256")
+		(uuid "0c37a993-f938-4129-9a2a-77f61ee456db")
 	)
 	(text "P3\n"
 		(exclude_from_sim no)
-		(at 234.696 90.678 0)
+		(at 303.276 163.068 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "977e5f1a-aab8-4a31-8a4d-6cfa574f988b")
+		(uuid "49601068-9ca0-412f-b59a-74901c3b7f87")
+	)
+	(text "5V Single relay\n"
+		(exclude_from_sim no)
+		(at 266.7 168.148 0)
+		(effects
+			(font
+				(size 0.8382 0.8382)
+			)
+		)
+		(uuid "4db0337c-5897-4946-8596-0c5d38a45d10")
+	)
+	(text "5V Single relay\n"
+		(exclude_from_sim no)
+		(at 266.7 188.214 0)
+		(effects
+			(font
+				(size 0.8382 0.8382)
+			)
+		)
+		(uuid "72081ef4-a716-413c-bc7b-7e0a314099f6")
 	)
 	(text "PCA9685\n"
 		(exclude_from_sim no)
-		(at 73.406 166.624 0)
+		(at 136.906 189.484 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3130,25 +3120,45 @@
 		)
 		(uuid "9997dd92-849a-421f-9a16-ca94b1a62a21")
 	)
-	(text "5V Single relay\n"
-		(exclude_from_sim no)
-		(at 198.12 76.454 0)
-		(effects
-			(font
-				(size 0.8382 0.8382)
-			)
-		)
-		(uuid "e6973cd8-f63d-404c-bf25-e7a728294ca7")
-	)
 	(text "P4"
 		(exclude_from_sim no)
-		(at 235.458 111.252 0)
+		(at 304.038 183.642 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "fabbfc44-2f67-42a4-8c4c-40210561e68d")
+		(uuid "b23760a8-1ef1-4809-942d-deae5bad5d31")
+	)
+	(text "5V Single relay\n"
+		(exclude_from_sim no)
+		(at 266.7 128.524 0)
+		(effects
+			(font
+				(size 0.8382 0.8382)
+			)
+		)
+		(uuid "d15fbf43-eb00-4c20-ba45-46b4d6cd8af5")
+	)
+	(text "P1\n"
+		(exclude_from_sim no)
+		(at 303.276 123.444 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ea67b9b7-61cd-492f-88ad-8aa2534891c5")
+	)
+	(wire
+		(pts
+			(xy 190.5 91.44) (xy 196.85 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04e5c76e-376e-43a1-87bd-11461c49598f")
 	)
 	(wire
 		(pts
@@ -3162,7 +3172,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 158.75) (xy 78.74 158.75)
+			(xy 60.96 91.44) (xy 67.31 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "064d8c60-f951-489d-a895-e8195f32cfd4")
+	)
+	(wire
+		(pts
+			(xy 158.75 181.61) (xy 142.24 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3172,17 +3192,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 87.63) (xy 198.12 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "086621e2-a66c-41e8-9c9d-2c4ec42b6f55")
-	)
-	(wire
-		(pts
-			(xy 93.98 161.29) (xy 78.74 161.29)
+			(xy 157.48 184.15) (xy 142.24 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3202,7 +3212,37 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 163.83) (xy 78.74 163.83)
+			(xy 270.51 124.46) (xy 297.18 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "115a8265-3c30-4e4f-9396-d69630063e7a")
+	)
+	(wire
+		(pts
+			(xy 36.83 71.12) (xy 43.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13d3bd70-45f9-4768-b06b-ea53a6e89fa1")
+	)
+	(wire
+		(pts
+			(xy 228.6 49.53) (xy 234.95 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "142ab843-7c48-42bb-a102-70fb1388cfe5")
+	)
+	(wire
+		(pts
+			(xy 156.21 186.69) (xy 142.24 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3212,7 +3252,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 153.67) (xy 78.74 153.67)
+			(xy 157.48 176.53) (xy 142.24 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3222,7 +3262,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 151.13) (xy 78.74 151.13)
+			(xy 144.78 71.12) (xy 151.13 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "252ca546-45e9-4518-8926-b03476b2ddcc")
+	)
+	(wire
+		(pts
+			(xy 156.21 173.99) (xy 142.24 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3232,17 +3282,27 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 52.07) (xy 228.6 52.07)
+			(xy 168.91 91.44) (xy 175.26 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d0a6403-9480-4a29-bc34-3a1a3f1fdfbf")
+		(uuid "2bdd8a11-e626-4450-825a-c6f0e599f0d8")
 	)
 	(wire
 		(pts
-			(xy 110.49 176.53) (xy 92.71 176.53)
+			(xy 266.7 199.39) (xy 266.7 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3255cc21-d2af-4209-8e78-15c1e548b159")
+	)
+	(wire
+		(pts
+			(xy 173.99 199.39) (xy 156.21 199.39)
 		)
 		(stroke
 			(width 0)
@@ -3262,6 +3322,36 @@
 	)
 	(wire
 		(pts
+			(xy 19.05 166.37) (xy 44.45 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3abecc93-a785-4ccc-96b5-fa09ddba91da")
+	)
+	(wire
+		(pts
+			(xy 207.01 49.53) (xy 213.36 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d495d44-7381-48c1-9ba7-52c99bdd42c6")
+	)
+	(wire
+		(pts
+			(xy 15.24 163.83) (xy 44.45 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "409a7418-4f13-4501-91f1-cd4a874bbb40")
+	)
+	(wire
+		(pts
 			(xy 203.2 30.48) (xy 209.55 30.48)
 		)
 		(stroke
@@ -3272,7 +3362,47 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 161.29) (xy 68.58 165.1)
+			(xy 209.55 71.12) (xy 215.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43997710-d548-4686-b61c-206ed660b1ec")
+	)
+	(wire
+		(pts
+			(xy 44.45 171.45) (xy 24.13 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c941473-5c2e-4b57-9f2a-e6ebee31f551")
+	)
+	(wire
+		(pts
+			(xy 270.51 184.15) (xy 298.45 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fd2c000-9546-4207-a03f-9fd12fdefc04")
+	)
+	(wire
+		(pts
+			(xy 21.59 71.12) (xy 21.59 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5532bb0c-77f5-4563-8ebb-7a929fc7875e")
+	)
+	(wire
+		(pts
+			(xy 132.08 184.15) (xy 132.08 187.96)
 		)
 		(stroke
 			(width 0)
@@ -3282,7 +3412,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 153.67) (xy 95.25 156.21)
+			(xy 158.75 176.53) (xy 158.75 179.07)
 		)
 		(stroke
 			(width 0)
@@ -3292,17 +3422,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 91.44) (xy 228.6 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6649a9f1-ef41-4cfe-aba8-5cf43693f466")
-	)
-	(wire
-		(pts
-			(xy 110.49 130.81) (xy 91.44 130.81)
+			(xy 173.99 153.67) (xy 154.94 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3312,7 +3432,47 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 138.43) (xy 92.71 138.43)
+			(xy 80.01 71.12) (xy 86.36 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de5e15d-07d9-433b-8cd0-63cdbe1fe7b8")
+	)
+	(wire
+		(pts
+			(xy 142.24 49.53) (xy 148.59 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7004d860-3f94-4178-829e-08f786764459")
+	)
+	(wire
+		(pts
+			(xy 55.88 49.53) (xy 62.23 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7661e1d9-f1fb-41f6-b95a-d159152437fb")
+	)
+	(wire
+		(pts
+			(xy 104.14 91.44) (xy 110.49 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b2dc388-7a45-415c-88c1-6fda7a4d47a5")
+	)
+	(wire
+		(pts
+			(xy 173.99 161.29) (xy 156.21 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3322,7 +3482,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 161.29) (xy 95.25 158.75)
+			(xy 158.75 184.15) (xy 158.75 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3342,7 +3502,77 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 148.59) (xy 78.74 148.59)
+			(xy 233.68 91.44) (xy 240.03 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89f576e0-28da-4bfd-af6e-9326120b1ed8")
+	)
+	(wire
+		(pts
+			(xy 266.7 139.7) (xy 266.7 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca06c3f-a339-4e4b-aa2d-90a300daab84")
+	)
+	(wire
+		(pts
+			(xy 166.37 71.12) (xy 172.72 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d931b3c-deac-4293-945f-f90fce60b4e9")
+	)
+	(wire
+		(pts
+			(xy 270.51 144.78) (xy 297.18 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92942f77-fd54-4570-9805-c3b41ca35720")
+	)
+	(wire
+		(pts
+			(xy 24.13 171.45) (xy 24.13 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "936f191a-20dc-418b-9094-cc76e7ac26a8")
+	)
+	(wire
+		(pts
+			(xy 231.14 71.12) (xy 237.49 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98195a9f-1ea0-4450-99ab-2df8264cf0f5")
+	)
+	(wire
+		(pts
+			(xy 101.6 71.12) (xy 107.95 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99fc148a-5c55-484e-abe7-c320febac100")
+	)
+	(wire
+		(pts
+			(xy 154.94 171.45) (xy 142.24 171.45)
 		)
 		(stroke
 			(width 0)
@@ -3362,7 +3592,37 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 146.05) (xy 93.98 146.05)
+			(xy 266.7 160.02) (xy 266.7 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fbc129f-7c7d-40e3-b03a-260a24bb0996")
+	)
+	(wire
+		(pts
+			(xy 21.59 168.91) (xy 44.45 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a217b0f9-f25b-4718-952b-e9a68336e569")
+	)
+	(wire
+		(pts
+			(xy 82.55 91.44) (xy 88.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3283658-78b9-4798-a924-1997c758ef43")
+	)
+	(wire
+		(pts
+			(xy 173.99 168.91) (xy 157.48 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3372,7 +3632,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 130.81) (xy 91.44 148.59)
+			(xy 154.94 153.67) (xy 154.94 171.45)
 		)
 		(stroke
 			(width 0)
@@ -3382,7 +3642,17 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 161.29) (xy 95.25 161.29)
+			(xy 123.19 71.12) (xy 129.54 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6954ce6-b7e9-46b2-acd6-02d860075c36")
+	)
+	(wire
+		(pts
+			(xy 173.99 184.15) (xy 158.75 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3392,7 +3662,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 138.43) (xy 92.71 151.13)
+			(xy 147.32 91.44) (xy 153.67 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a758fdd8-2e27-48de-996e-a2323b181cc5")
+	)
+	(wire
+		(pts
+			(xy 156.21 161.29) (xy 156.21 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3402,7 +3682,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 184.15) (xy 91.44 184.15)
+			(xy 173.99 207.01) (xy 154.94 207.01)
 		)
 		(stroke
 			(width 0)
@@ -3412,27 +3692,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 67.31) (xy 198.12 69.85)
+			(xy 266.7 179.07) (xy 266.7 181.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b151bfb1-1ef3-480a-b9b1-acbc42170f1f")
+		(uuid "ae8ebe25-ec84-405d-a2f7-4c57a80b089a")
 	)
 	(wire
 		(pts
-			(xy 198.12 127) (xy 198.12 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b176acf1-9e4c-4291-825c-32d19d42afc6")
-	)
-	(wire
-		(pts
-			(xy 95.25 156.21) (xy 78.74 156.21)
+			(xy 158.75 179.07) (xy 142.24 179.07)
 		)
 		(stroke
 			(width 0)
@@ -3452,23 +3722,33 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 111.76) (xy 229.87 111.76)
+			(xy 185.42 49.53) (xy 191.77 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b77b436c-18ec-411d-9c3a-10a77b8b5916")
+		(uuid "ba774a3a-fcaa-4645-81a9-3482fd107541")
 	)
 	(wire
 		(pts
-			(xy 201.93 72.39) (xy 228.6 72.39)
+			(xy 15.24 30.48) (xy 15.24 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be4f6b13-9d94-46e6-8662-4b9fad84add8")
+		(uuid "bad855b6-540b-4860-8ef4-0045a8b6584c")
+	)
+	(wire
+		(pts
+			(xy 212.09 91.44) (xy 218.44 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd4e49b5-050e-4857-a740-04f5f2dd0659")
 	)
 	(wire
 		(pts
@@ -3482,27 +3762,57 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 106.68) (xy 198.12 109.22)
+			(xy 270.51 163.83) (xy 297.18 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ca3e4cbf-dad0-4155-a0e7-c8cf7e89c1c5")
+		(uuid "bfa64fbc-be6a-4f49-82ab-a0f3af2f37f2")
 	)
 	(wire
 		(pts
-			(xy 15.24 95.25) (xy 57.15 95.25)
+			(xy 187.96 71.12) (xy 194.31 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d4ab8d3b-3ae8-4f92-ae55-50f52773c6da")
+		(uuid "c0076bb1-df86-4cb5-be60-c35377f3109a")
 	)
 	(wire
 		(pts
-			(xy 110.49 153.67) (xy 95.25 153.67)
+			(xy 39.37 91.44) (xy 45.72 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c74102f9-c90a-4d94-910a-21bdb1e2c5a3")
+	)
+	(wire
+		(pts
+			(xy 77.47 49.53) (xy 83.82 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c894c35d-c7ad-41fa-af55-6e7f6f53ea74")
+	)
+	(wire
+		(pts
+			(xy 125.73 91.44) (xy 132.08 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d21ab6ee-022a-42e4-8e3c-958d060a5bfc")
+	)
+	(wire
+		(pts
+			(xy 173.99 176.53) (xy 158.75 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3512,7 +3822,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 184.15) (xy 91.44 166.37)
+			(xy 154.94 207.01) (xy 154.94 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3522,7 +3832,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 146.05) (xy 93.98 153.67)
+			(xy 157.48 168.91) (xy 157.48 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3532,23 +3842,23 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 30.48) (xy 15.24 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e14a6738-bd4c-4c8a-99c5-1228172f8324")
-	)
-	(wire
-		(pts
-			(xy 93.98 168.91) (xy 93.98 161.29)
+			(xy 157.48 191.77) (xy 157.48 184.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e29ae124-364b-47df-94c7-813cbaaf5d7a")
+	)
+	(wire
+		(pts
+			(xy 34.29 49.53) (xy 40.64 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4d3823f-f517-4b7c-be85-3f6a700f412d")
 	)
 	(wire
 		(pts
@@ -3562,7 +3872,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 166.37) (xy 78.74 166.37)
+			(xy 154.94 189.23) (xy 142.24 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3572,13 +3882,63 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 176.53) (xy 92.71 163.83)
+			(xy 163.83 49.53) (xy 170.18 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea5aeb62-3522-4810-b628-426f25870f70")
+	)
+	(wire
+		(pts
+			(xy 58.42 71.12) (xy 64.77 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec1fdb57-ac34-43d8-acdf-06dfa4e1150e")
+	)
+	(wire
+		(pts
+			(xy 156.21 199.39) (xy 156.21 186.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ef73e618-4c35-4230-8ba7-444cc84d5dca")
+	)
+	(wire
+		(pts
+			(xy 120.65 49.53) (xy 127 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f07a8dfe-d427-408d-a80c-38926cac64e8")
+	)
+	(wire
+		(pts
+			(xy 19.05 49.53) (xy 19.05 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fac1766b-9e27-4ef1-b076-90ff204d7b81")
+	)
+	(wire
+		(pts
+			(xy 99.06 49.53) (xy 105.41 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fce7c0e3-bdbc-498c-bfa4-93b73fce4d17")
 	)
 	(wire
 		(pts
@@ -3592,13 +3952,23 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 168.91) (xy 93.98 168.91)
+			(xy 173.99 191.77) (xy 157.48 191.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fee13a28-99b6-4ba9-8142-19dc3e044529")
+	)
+	(label "GND"
+		(at 220.98 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "02750351-c102-47a1-91d6-7a40abffe1a0")
 	)
 	(label "GND"
 		(at 109.22 38.1 0)
@@ -3611,6 +3981,26 @@
 		(uuid "036f46ba-df8b-4003-b8d9-ba281360c697")
 	)
 	(label "GND"
+		(at 57.15 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "03f66b91-007f-43da-8d81-a2cef644b151")
+	)
+	(label "GND"
+		(at 118.11 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "051db1b1-d0fe-4eb0-8889-5092e7a87dfa")
+	)
+	(label "GND"
 		(at 130.81 38.1 0)
 		(effects
 			(font
@@ -3621,14 +4011,14 @@
 		(uuid "06d5b692-e8ab-4295-bf1e-6b47da2264a7")
 	)
 	(label "5V"
-		(at 195.58 87.63 0)
+		(at 48.26 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify top)
+			(justify left bottom)
 		)
-		(uuid "07044552-26a7-46ac-85e6-11096ab8a676")
+		(uuid "07661c7a-11f1-465a-b594-0f2850d239c8")
 	)
 	(label "GND"
 		(at 44.45 38.1 0)
@@ -3641,7 +4031,7 @@
 		(uuid "078f00d8-e9f9-42ae-9058-959967f855b5")
 	)
 	(label "5V"
-		(at 110.49 186.69 180)
+		(at 173.99 209.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3650,38 +4040,68 @@
 		)
 		(uuid "097e95eb-725b-4f2c-b80e-54dadfb61002")
 	)
-	(label "Z_IN"
-		(at 201.93 127 0)
+	(label "GND"
+		(at 266.7 201.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "0aff6246-099f-4fcf-8a89-0341349ab920")
+		(uuid "0a29040f-a4a1-43d4-a423-2af2eb55961d")
 	)
-	(label "Z_IN"
-		(at 217.17 147.32 0)
+	(label "5V"
+		(at 53.34 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify bottom)
+			(justify left bottom)
 		)
-		(uuid "0d1ca7c8-8e2c-4ed5-91c9-d8939895ce17")
+		(uuid "0a7290df-986b-43c6-a262-ecdbbeade4a1")
 	)
-	(label "Z_IN"
-		(at 201.93 67.31 0)
+	(label "GND_Zapper"
+		(at 284.48 212.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify top)
+			(justify right bottom)
 		)
-		(uuid "153c9c17-1e55-4988-bd92-18e5382e4aee")
+		(uuid "0de6e50a-c35e-4ad5-b4b4-6468a12cf8d9")
+	)
+	(label "5V"
+		(at 199.39 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "144433f6-24c6-4d4f-aaa1-5ce23bb2ff2b")
 	)
 	(label "GND"
-		(at 110.49 189.23 180)
+		(at 242.57 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "14973239-ffa3-45d5-b61b-b6080538884a")
+	)
+	(label "D7"
+		(at 44.45 161.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "16086b60-c3d0-40b9-a8a7-245d0b25b646")
+	)
+	(label "GND"
+		(at 173.99 212.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3689,6 +4109,26 @@
 			(justify right top)
 		)
 		(uuid "1629ac2e-21d6-427c-a5a4-156cde8a6be8")
+	)
+	(label "D4"
+		(at 44.45 153.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "16e2273c-813a-43e2-9765-978499d4770b")
+	)
+	(label "5V"
+		(at 96.52 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b029ed0-b5ef-45d6-b8d7-60bab8741e8f")
 	)
 	(label "GND"
 		(at 22.86 38.1 0)
@@ -3701,7 +4141,7 @@
 		(uuid "1bd14d66-866a-4138-9880-81c6e190498e")
 	)
 	(label "5V"
-		(at 110.49 179.07 180)
+		(at 173.99 201.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3721,7 +4161,7 @@
 		(uuid "1cad01ce-3f65-4512-90fa-2ea93ada57da")
 	)
 	(label "GND"
-		(at 110.49 158.75 180)
+		(at 173.99 181.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3731,7 +4171,57 @@
 		(uuid "2092632a-f2d0-4fd3-b7a6-09111d295d55")
 	)
 	(label "GND"
-		(at 110.49 135.89 180)
+		(at 266.7 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "215d5bff-0b30-43f5-a3ab-ed6887ec67a1")
+	)
+	(label "5V"
+		(at 245.11 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22471602-b53f-464f-a6b4-b98e7c631431")
+	)
+	(label "5V"
+		(at 226.06 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2316aa79-1a3e-4024-9112-c19120e8a476")
+	)
+	(label "Z_IN"
+		(at 295.91 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "23458aad-109f-4ae4-bf1f-515815906a10")
+	)
+	(label "GND_Zapper"
+		(at 307.34 187.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "24b8f82c-1233-4546-bbe3-a9468e300782")
+	)
+	(label "GND"
+		(at 173.99 158.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3751,6 +4241,16 @@
 		(uuid "2723b745-19a4-4d23-8ab9-9c381be3a8fc")
 	)
 	(label "5V"
+		(at 158.75 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2729431e-df08-4032-b6ab-48ecca5074d7")
+	)
+	(label "5V"
 		(at 130.81 22.86 0)
 		(effects
 			(font
@@ -3761,14 +4261,14 @@
 		(uuid "2797c78c-34a1-4fc9-ad23-0c348178245a")
 	)
 	(label "5V"
-		(at 74.93 77.47 0)
+		(at 74.93 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "285a3cf1-0683-4b65-9a06-862270311557")
+		(uuid "2820d716-e49f-4d40-826c-864ad698b81c")
 	)
 	(label "GND"
 		(at 66.04 38.1 0)
@@ -3780,8 +4280,88 @@
 		)
 		(uuid "2c2fa7d0-2c17-4730-82a6-ad18d3cc5502")
 	)
+	(label "5V"
+		(at 62.23 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ceb01dc-2344-4042-bdb9-1b04fdc6df1b")
+	)
+	(label "5V"
+		(at 201.93 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e4db907-613e-4280-a065-bdc4251dd1c0")
+	)
+	(label "5V"
+		(at 139.7 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32043799-57fd-45d0-bc53-063632979ec9")
+	)
+	(label "5V"
+		(at 134.62 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "342f6294-ac05-4d45-b449-08d6ec3d286c")
+	)
+	(label "5V"
+		(at 137.16 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3444ed15-2ecb-4a15-b9e2-e630eab801c8")
+	)
+	(label "5V"
+		(at 220.98 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3620144b-9536-47ef-820b-a64323dbbfeb")
+	)
 	(label "GND"
-		(at 110.49 143.51 180)
+		(at 201.93 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "369a511f-dcc6-4a60-b890-e75e951679a8")
+	)
+	(label "5V"
+		(at 161.29 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3933ce6a-dbc1-4342-9066-4b44c96e48dd")
+	)
+	(label "GND"
+		(at 173.99 166.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3800,6 +4380,36 @@
 		)
 		(uuid "39d9984e-3f46-4c1a-abb6-2a3aaf412c72")
 	)
+	(label "5V"
+		(at 156.21 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3dd2b1be-61d1-465c-ba48-32aeec282181")
+	)
+	(label "D7"
+		(at 259.08 191.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "3ecc03d5-e583-4fcf-a3db-db1bdbec174e")
+	)
+	(label "GND"
+		(at 226.06 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "3f1976e3-10df-463d-b8e0-165b689c79bf")
+	)
 	(label "GND"
 		(at 217.17 38.1 0)
 		(effects
@@ -3810,8 +4420,18 @@
 		)
 		(uuid "3f9551a2-773f-4b4a-8465-a22466b84678")
 	)
+	(label "5V"
+		(at 118.11 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "407d2064-1a49-4c51-aede-9d003fa78f99")
+	)
 	(label "SDA"
-		(at 68.58 157.48 0)
+		(at 132.08 180.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3820,15 +4440,35 @@
 		)
 		(uuid "43b1c7cb-c5fa-44b1-ba01-01e303b5cead")
 	)
-	(label "D4"
-		(at 190.5 59.69 180)
+	(label "5V"
+		(at 72.39 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right top)
+			(justify left bottom)
 		)
-		(uuid "44719d32-8802-4df2-80bc-77154c123d40")
+		(uuid "44cb40c9-1c4e-401f-8ba7-28b376a5b001")
+	)
+	(label "GND"
+		(at 139.7 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "46148796-01d8-48d1-9189-08b233eebc45")
+	)
+	(label "GND"
+		(at 53.34 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "46dc51f6-9b55-40d7-bf75-53da5b66d0fc")
 	)
 	(label "5V"
 		(at 109.22 22.86 0)
@@ -3850,28 +4490,38 @@
 		)
 		(uuid "47605f80-12ab-4de9-9237-a06c54d63bc7")
 	)
-	(label "D7"
-		(at 57.15 105.41 180)
+	(label "GND"
+		(at 156.21 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify top)
 		)
-		(uuid "4a44ff38-23be-403c-b61b-fec55ab97204")
+		(uuid "48152f45-1f64-47a5-8919-161603820d98")
 	)
-	(label "GND_Zapper"
-		(at 237.49 76.2 180)
+	(label "GND"
+		(at 177.8 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right top)
+			(justify top)
 		)
-		(uuid "4c002d43-b42c-4aec-9239-65702a656d86")
+		(uuid "4a81b333-1bf8-4e93-b6f2-fbba913f4a98")
+	)
+	(label "SCL"
+		(at 69.85 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52601045-bfa1-4f5f-99cd-a4294b0de442")
 	)
 	(label "5V"
-		(at 110.49 163.83 180)
+		(at 173.99 186.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3879,6 +4529,26 @@
 			(justify right bottom)
 		)
 		(uuid "53a1bbd0-cb68-48b7-bb5c-1ec6d073241d")
+	)
+	(label "5V"
+		(at 91.44 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "54f295d0-9cb7-4c7e-b9c9-b8b6f1316d77")
+	)
+	(label "GND"
+		(at 180.34 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "551e2811-3e43-4059-b910-efd97b64b03c")
 	)
 	(label "5V"
 		(at 66.04 22.86 0)
@@ -3890,28 +4560,18 @@
 		)
 		(uuid "56ab2f77-eb9e-43ab-92b9-c378ea4417cd")
 	)
-	(label "5V"
-		(at 195.58 127 0)
+	(label "GND"
+		(at 96.52 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "56b20d98-3b3a-46c5-973e-6f6b28cf8d69")
-	)
-	(label "SCL"
-		(at 82.55 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "57dd8e12-ccf3-42f6-acc0-b2d8b9b115e9")
+		(uuid "576fe595-a5dd-46d0-8c53-e2417a825dfa")
 	)
 	(label "5V"
-		(at 110.49 148.59 180)
+		(at 173.99 171.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3920,18 +4580,38 @@
 		)
 		(uuid "58b0cb9a-35b8-4f43-946d-82a67f83d062")
 	)
-	(label "GND_Zapper"
-		(at 205.74 147.32 180)
+	(label "5V"
+		(at 264.16 179.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify top)
 		)
-		(uuid "5d6739a9-bbe2-4a07-a60c-f1bb99630e90")
+		(uuid "59b04c2b-6cdb-4824-bf67-0f0872818c34")
+	)
+	(label "GND_Zapper"
+		(at 306.07 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "5cf4e3f4-e5ea-4be7-9290-18abe0775e0a")
+	)
+	(label "D5"
+		(at 44.45 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5e345f19-9f6b-4823-b8fa-4e9049f8d4d1")
 	)
 	(label "GND"
-		(at 110.49 181.61 180)
+		(at 173.99 204.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3941,17 +4621,27 @@
 		(uuid "5fd0e445-f4f8-491d-a4a8-cd55ac96ef85")
 	)
 	(label "GND"
-		(at 198.12 129.54 0)
+		(at 134.62 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "6bcb56e7-94c9-4124-9a6f-2bbdaa793b3a")
+		(uuid "642396d0-dde1-4a35-a745-e8a03c0e78d9")
 	)
 	(label "5V"
-		(at 110.49 156.21 180)
+		(at 247.65 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65d15975-be01-44eb-b468-9066fb165b62")
+	)
+	(label "5V"
+		(at 173.99 179.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3960,18 +4650,38 @@
 		)
 		(uuid "6c819fab-b7cd-466f-99cc-97e5739b10bd")
 	)
-	(label "D4"
-		(at 57.15 97.79 180)
+	(label "5V"
+		(at 264.16 160.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify top)
 		)
-		(uuid "6d291e98-2c1e-40e3-b58b-6652f41c6a65")
+		(uuid "6f695213-11a1-4a39-a41e-bbc11e42427e")
+	)
+	(label "GND"
+		(at 115.57 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "6f7d70a8-1147-4f30-87e2-586a3b81d5fd")
+	)
+	(label "GND"
+		(at 199.39 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "70c484d0-de0b-4dff-b3bc-74a6ff4419f0")
 	)
 	(label "5V"
-		(at 110.49 133.35 180)
+		(at 173.99 156.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3980,18 +4690,48 @@
 		)
 		(uuid "7135a4d8-e82d-44d2-b460-f4068eb16541")
 	)
+	(label "SDA"
+		(at 69.85 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "72e00fc6-567c-46a7-a11c-01eb20fa3dc2")
+	)
 	(label "GND"
-		(at 69.85 130.81 0)
+		(at 266.7 162.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "77f1ac94-0d78-4030-a5ca-d96e832771f8")
+		(uuid "74517709-f446-4ca9-a5bc-4005b01bfaa1")
+	)
+	(label "GND_Zapper"
+		(at 306.07 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "745e2650-a47d-4b2c-99ba-15f95d0cd0be")
+	)
+	(label "GND_Zapper"
+		(at 306.07 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "74f8ed00-c0ae-4156-86f4-d24de1cabbcc")
 	)
 	(label "GND"
-		(at 110.49 151.13 180)
+		(at 173.99 173.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4000,35 +4740,75 @@
 		)
 		(uuid "7928ad6d-34a1-410d-8a10-e5980c716029")
 	)
-	(label "SDA"
-		(at 82.55 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ed1bab5-2e19-47c3-b4e9-e06330ac4111")
-	)
-	(label "Z_IN"
-		(at 201.93 106.68 0)
+	(label "GND"
+		(at 158.75 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "807d5d46-5090-434e-b343-6ca1a1eed48d")
+		(uuid "796b9cea-3b7a-4466-ae73-7484865a5f88")
 	)
-	(label "GND_Zapper"
-		(at 237.49 55.88 180)
+	(label "GND"
+		(at 48.26 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right top)
+			(justify top)
 		)
-		(uuid "85ea00d1-b4cf-4762-a237-ca5fb9344721")
+		(uuid "800ac0ee-a0a7-443c-841f-b06cf8c7e215")
+	)
+	(label "GND"
+		(at 72.39 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "8041d34a-75ab-421f-b799-98745721edfd")
+	)
+	(label "GND"
+		(at 161.29 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "81d5f329-8bac-491a-b620-a9bfe11f18e5")
+	)
+	(label "5V"
+		(at 31.75 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "822d7541-ac9e-4c78-a7f9-07003b69ff00")
+	)
+	(label "5V"
+		(at 69.85 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "86598ab1-3a1d-4924-b70e-dcfa1983b69e")
+	)
+	(label "5V"
+		(at 180.34 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8685c83b-ddd7-4ecc-b979-aaa2626199ec")
 	)
 	(label "GND"
 		(at 238.76 38.1 0)
@@ -4040,15 +4820,15 @@
 		)
 		(uuid "8abf79c6-7f09-4460-9249-e93d1b1ce83d")
 	)
-	(label "D7"
-		(at 190.5 119.38 180)
+	(label "GND"
+		(at 50.8 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right top)
+			(justify top)
 		)
-		(uuid "8c64bfff-9bd4-4f74-8086-c7ddf6919b0c")
+		(uuid "8d56ec93-e8b5-439a-8fce-4bdb19264020")
 	)
 	(label "GND"
 		(at 87.63 38.1 0)
@@ -4060,18 +4840,38 @@
 		)
 		(uuid "8dcf3786-b5f6-4fbc-ab19-4585f1401aed")
 	)
-	(label "D5"
-		(at 190.5 80.01 180)
+	(label "GND"
+		(at 91.44 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "8f80df6b-3a51-4001-b860-737b2e69e6d3")
+	)
+	(label "D4"
+		(at 259.08 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right top)
 		)
-		(uuid "90d7fc1c-071f-4d06-8645-2b7490db7e84")
+		(uuid "9096a49f-5738-4a14-a36f-0d366f4a6838")
 	)
 	(label "GND"
-		(at 110.49 166.37 180)
+		(at 113.03 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "943e870f-e17d-4b8a-8bd3-3214c250f000")
+	)
+	(label "GND"
+		(at 173.99 189.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4081,7 +4881,7 @@
 		(uuid "967b738b-9f71-43ab-b3d7-7a8f0f5ca625")
 	)
 	(label "GND"
-		(at 68.58 165.1 0)
+		(at 132.08 187.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4089,6 +4889,26 @@
 			(justify left bottom)
 		)
 		(uuid "96924145-6cae-47ee-a5f7-d0433b5ef9b4")
+	)
+	(label "5V"
+		(at 177.8 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97018915-015f-4bf9-ba09-8b69cd830454")
+	)
+	(label "D5"
+		(at 259.08 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "9734a34c-5e9d-478f-bca4-4ddcea52d498")
 	)
 	(label "5V"
 		(at 87.63 22.86 0)
@@ -4100,18 +4920,28 @@
 		)
 		(uuid "97fa5528-53fe-4170-9e96-e7d2e117dbe5")
 	)
-	(label "Z_IN"
-		(at 201.93 87.63 0)
+	(label "GND"
+		(at 266.7 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "9a61233f-2f54-4e1f-a912-12c5c23a8d5e")
+		(uuid "99731e78-daf8-4d4f-b045-86519711af8c")
+	)
+	(label "Z_IN"
+		(at 270.51 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "9c2ca11d-e143-45f2-97b1-aebd2533dc75")
 	)
 	(label "GND"
-		(at 68.58 153.67 0)
+		(at 132.08 176.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4120,18 +4950,18 @@
 		)
 		(uuid "9fadd6b9-51de-4285-b23a-09dd64d05213")
 	)
-	(label "D5"
-		(at 57.15 100.33 180)
+	(label "GND"
+		(at 137.16 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify top)
 		)
-		(uuid "a0109caf-7e42-48b0-a28c-ddd157e3cd53")
+		(uuid "a0cc7b62-c7a7-4fa1-a8d5-54b1bb6f0891")
 	)
 	(label "5V"
-		(at 110.49 171.45 180)
+		(at 173.99 194.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4140,18 +4970,38 @@
 		)
 		(uuid "a28ec710-cdca-4bf3-bdc8-511391f2936e")
 	)
-	(label "D6"
-		(at 57.15 102.87 180)
+	(label "Z_IN"
+		(at 270.51 179.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify top)
 		)
-		(uuid "a68db99e-d165-4e0e-a052-ac538c81a873")
+		(uuid "a2b4d774-7b34-40d7-a396-ec98276f89cc")
+	)
+	(label "GND"
+		(at 182.88 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "a4f37e2c-2c89-402e-abfb-527a101852b0")
 	)
 	(label "5V"
-		(at 110.49 140.97 180)
+		(at 182.88 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a69f50d4-9507-4a89-bd77-487525d35457")
+	)
+	(label "5V"
+		(at 173.99 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4161,7 +5011,7 @@
 		(uuid "a7feecc4-2b61-44ab-a849-341c6afd13b2")
 	)
 	(label "GND"
-		(at 110.49 173.99 180)
+		(at 173.99 196.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4170,45 +5020,115 @@
 		)
 		(uuid "ab5bbba1-c512-4286-b5dc-2bdadf70058f")
 	)
-	(label "GND_Zapper"
-		(at 238.76 115.57 180)
+	(label "D6"
+		(at 259.08 171.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right top)
 		)
-		(uuid "b3466fe5-d754-43ee-a224-651f45da71fa")
+		(uuid "abec96b0-695f-4783-b21f-429f37447837")
+	)
+	(label "GND"
+		(at 247.65 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "ad2fb700-6a53-4e71-892e-ac50b611f3a6")
 	)
 	(label "5V"
-		(at 195.58 106.68 0)
+		(at 113.03 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify top)
+			(justify left bottom)
 		)
-		(uuid "b41e2f99-07e0-48db-a254-c45905cd8567")
+		(uuid "b107c5ee-ff82-411e-a32e-068300e6a77c")
+	)
+	(label "5V"
+		(at 50.8 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2331600-04d6-4776-862d-2bb3f816a4d0")
+	)
+	(label "5V"
+		(at 93.98 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3c9e4d4-783d-4dfd-a9b3-0475665171c7")
+	)
+	(label "D6"
+		(at 44.45 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b6ee2179-95b8-4606-91b8-faf44c0c32ec")
+	)
+	(label "5V"
+		(at 26.67 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b98e1b1a-bd13-4532-b859-acf613d9e98a")
 	)
 	(label "GND"
-		(at 198.12 109.22 0)
+		(at 223.52 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "b5a4532f-2f7c-4c4d-9085-3858c23845f1")
+		(uuid "bf85a35b-3f9b-4f91-8c37-ecba2a0eab1a")
 	)
 	(label "GND"
-		(at 198.12 90.17 0)
+		(at 26.67 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "c5606369-3beb-4e86-9e3b-ad8f0664eaef")
+		(uuid "c075d293-c8b6-46fb-91da-07061a707533")
+	)
+	(label "GND"
+		(at 204.47 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "c120cc6d-afa4-409a-94a4-a195d0a011ca")
+	)
+	(label "GND"
+		(at 93.98 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "c5d0f29f-bebb-422d-adeb-fcc37a0b1fd9")
 	)
 	(label "5V"
 		(at 238.76 22.86 0)
@@ -4230,8 +5150,48 @@
 		)
 		(uuid "c949a6cb-bfeb-42b6-a2b1-50909f40ce8b")
 	)
+	(label "5V"
+		(at 115.57 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb9094b5-2a64-417a-8457-8793d9001d19")
+	)
+	(label "5V"
+		(at 264.16 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "cb9ce24f-55fa-4a12-a6cf-1ced9e70903e")
+	)
+	(label "GND"
+		(at 74.93 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "ce1500f0-ad4d-4326-8cb7-8367c6df09e2")
+	)
+	(label "5V"
+		(at 242.57 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ceafed1b-22a3-4064-a3f1-d390de5a9bd9")
+	)
 	(label "SCL"
-		(at 68.58 161.29 0)
+		(at 132.08 184.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4240,18 +5200,8 @@
 		)
 		(uuid "ceb5aa72-4f66-4c3d-aff0-8bb4c1df1c99")
 	)
-	(label "GND_Zapper"
-		(at 237.49 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right top)
-		)
-		(uuid "d55ae6d0-49a7-4f27-ad33-3457f0a6d9ce")
-	)
 	(label "5V"
-		(at 68.58 149.86 0)
+		(at 132.08 172.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4259,6 +5209,36 @@
 			(justify left bottom)
 		)
 		(uuid "d64d438c-b00f-47d9-8d2f-9055f3232d01")
+	)
+	(label "GND"
+		(at 245.11 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "d66d4110-e960-4946-90cd-1fab7ca93ee6")
+	)
+	(label "5V"
+		(at 264.16 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "d67451d2-e6b9-4aec-975d-63c9f62d8486")
+	)
+	(label "5V"
+		(at 204.47 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7ce3858-310f-48ef-8a1b-04f7843cc413")
 	)
 	(label "5V"
 		(at 44.45 22.86 0)
@@ -4270,15 +5250,15 @@
 		)
 		(uuid "d8c74a3f-1659-45fe-9fa4-e941a675265c")
 	)
-	(label "5V"
-		(at 195.58 67.31 0)
+	(label "GND"
+		(at 29.21 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "db79b8d8-89be-42f5-858d-37f28d0a71a6")
+		(uuid "db1845be-9dc0-4f83-9c3e-a7e8cc676e5b")
 	)
 	(label "GND"
 		(at 195.58 38.1 0)
@@ -4300,16 +5280,6 @@
 		)
 		(uuid "e04a1d9c-2983-4702-a83a-0582a363f069")
 	)
-	(label "D6"
-		(at 190.5 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right top)
-		)
-		(uuid "e05ffdf4-4779-431a-aacc-0b13011decf4")
-	)
 	(label "GND"
 		(at 173.99 38.1 0)
 		(effects
@@ -4320,15 +5290,65 @@
 		)
 		(uuid "e191cf0c-f8bf-47f2-bc21-4f40119b2a0d")
 	)
-	(label "GND"
-		(at 198.12 69.85 0)
+	(label "Z_IN"
+		(at 270.51 199.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify top)
 		)
-		(uuid "f9143f2c-ba17-4edf-a1c3-29d7e9bbdf53")
+		(uuid "e6db0dff-cd43-4014-8add-8ff362f572d3")
+	)
+	(label "5V"
+		(at 223.52 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e75137fc-6924-4e84-b0e8-bfdd39eb4035")
+	)
+	(label "Z_IN"
+		(at 270.51 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "ef4ec4c4-0326-4de1-96b4-61863247448a")
+	)
+	(label "5V"
+		(at 29.21 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f43f1a0e-9ec5-4ca5-9c10-834731902e83")
+	)
+	(label "GND"
+		(at 31.75 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "fbeb1628-bc8a-4d30-8387-b7e6e83b3772")
+	)
+	(label "GND"
+		(at 69.85 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "fe70b033-c9d4-41ec-839e-6342939b8c2e")
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
@@ -4401,6 +5421,158 @@
 			(project ""
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 72.39 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0515f88c-e92e-49cf-a3b8-19a2f662e685")
+		(property "Reference" "D25"
+			(at 83.82 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 83.82 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 73.66 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 74.93 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 72.39 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e9cc5ce7-afc8-4c30-ac78-f5cb2dbab8ef")
+		)
+		(pin "4"
+			(uuid "6b8792cd-4584-40e2-86df-2f29296d425c")
+		)
+		(pin "3"
+			(uuid "854b0782-793e-4adf-8ca7-569f1a0dc677")
+		)
+		(pin "1"
+			(uuid "a80a0872-e273-4ca6-9f58-27b27510a6d4")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 26.67 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a6143f6-64ef-4632-8e55-c5666fabd3c9")
+		(property "Reference" "D12"
+			(at 38.1 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 38.1 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 27.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 29.21 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 26.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9ac3ba45-f2da-483c-bebf-b1a7062a7812")
+		)
+		(pin "4"
+			(uuid "4d15dc74-887c-4d16-a9af-60b14dddf314")
+		)
+		(pin "3"
+			(uuid "d1b57468-0f94-49bb-a46b-8e33cace4838")
+		)
+		(pin "1"
+			(uuid "d888a581-33c4-45b9-bfd0-dcb76b15d6ef")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -4483,8 +5655,236 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 242.57 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e61b29c-866b-46b0-a498-8e42839ec88b")
+		(property "Reference" "D22"
+			(at 254 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 254 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 243.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 245.11 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 242.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b6b5982e-4c20-4e6d-b7fa-eae51e2d427a")
+		)
+		(pin "4"
+			(uuid "80324cf3-6e03-4cdf-83b8-b1e503a1ce71")
+		)
+		(pin "3"
+			(uuid "81a6bd99-7e4d-41e1-a32f-00fddf19117e")
+		)
+		(pin "1"
+			(uuid "aa60b91e-a849-40dc-a5a4-76c434e48c94")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 156.21 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f19e12f-403e-45d3-81d7-40c371882996")
+		(property "Reference" "D18"
+			(at 167.64 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 167.64 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 157.48 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 158.75 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 156.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e192ad22-3419-4534-b964-252ee949c0d3")
+		)
+		(pin "4"
+			(uuid "a269a377-4623-43c4-90cc-c5e334ace0e2")
+		)
+		(pin "3"
+			(uuid "8c3207e8-ec00-4fb3-90f7-8666d840b028")
+		)
+		(pin "1"
+			(uuid "724f81a9-a3ad-4343-9dd8-378925c8c8dc")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 226.06 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18948066-368a-4274-a305-8a06a8b7bc78")
+		(property "Reference" "D43"
+			(at 237.49 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 237.49 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 227.33 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 228.6 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 226.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "39bdc47f-3c78-40bd-ac32-3bcd5f9cd0b2")
+		)
+		(pin "4"
+			(uuid "47f1f125-1f28-4246-b3a0-1092d0842ed6")
+		)
+		(pin "3"
+			(uuid "814d87eb-dc78-4382-b8e0-09cd53d36fc0")
+		)
+		(pin "1"
+			(uuid "e713f9b2-af0a-410a-bc68-6bd1d62280a4")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 133.35 0)
+		(at 181.61 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4493,7 +5893,7 @@
 		(fields_autoplaced yes)
 		(uuid "1986e081-be4f-40c1-ba8c-9ebd520a23f6")
 		(property "Reference" "M1"
-			(at 127 131.6468 0)
+			(at 190.5 154.5068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4502,7 +5902,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 134.1868 0)
+			(at 190.5 157.0468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4511,7 +5911,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 138.176 0)
+			(at 181.61 161.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4520,7 +5920,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 138.176 0)
+			(at 181.61 161.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +5929,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 133.35 0)
+			(at 181.61 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4556,8 +5956,84 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 91.44 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19e229fd-3767-4525-ac3e-ef9c6058606d")
+		(property "Reference" "D15"
+			(at 102.87 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 102.87 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 92.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 93.98 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 91.44 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f146cc7d-8bfb-4f37-bd70-cb6952cc444c")
+		)
+		(pin "4"
+			(uuid "f0a61ec3-5179-4936-9330-d6f7349116e4")
+		)
+		(pin "3"
+			(uuid "35884623-9d85-473a-a4a3-f7d2b6caee9a")
+		)
+		(pin "1"
+			(uuid "99e42899-b2d6-4821-b1d0-71006f39b8a6")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 171.45 0)
+		(at 181.61 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4566,7 +6042,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b060821-bc57-4f51-aa0a-2e84bc6f8b9b")
 		(property "Reference" "M6"
-			(at 127 169.7468 0)
+			(at 190.5 192.6068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4575,7 +6051,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 172.2868 0)
+			(at 190.5 195.1468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,7 +6060,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 176.276 0)
+			(at 181.61 199.136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4593,7 +6069,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 176.276 0)
+			(at 181.61 199.136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4602,7 +6078,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 171.45 0)
+			(at 181.61 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,6 +6099,158 @@
 			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "M6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 118.11 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f615dd1-c2a3-49d2-a87e-c9c444112d58")
+		(property "Reference" "D38"
+			(at 129.54 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 129.54 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 120.65 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "96a3c513-955d-45c4-bc66-f9905338baac")
+		)
+		(pin "4"
+			(uuid "c181cf1c-9afd-4862-8b05-34715781c8aa")
+		)
+		(pin "3"
+			(uuid "feb57493-fb82-4edc-a261-3b90ad88a2c3")
+		)
+		(pin "1"
+			(uuid "4bf38a04-4215-4050-ade8-0f7b1353daf4")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 115.57 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fc93836-50ce-479d-abf5-ad1b51ac7632")
+		(property "Reference" "D27"
+			(at 127 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 127 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 116.84 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 118.11 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 115.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a354adde-e978-4e54-941a-23f945f93b4d")
+		)
+		(pin "4"
+			(uuid "4807555c-d122-49f4-a41f-660e568d943d")
+		)
+		(pin "3"
+			(uuid "af1d8cc7-ef01-4b2a-85b0-93d08c3b633c")
+		)
+		(pin "1"
+			(uuid "97165431-832f-48db-9025-283392fbfe9a")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D27")
 					(unit 1)
 				)
 			)
@@ -4706,7 +6334,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 140.97 0)
+		(at 181.61 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4715,7 +6343,7 @@
 		(fields_autoplaced yes)
 		(uuid "23d74485-ca32-43cf-bd4b-269063988532")
 		(property "Reference" "M2"
-			(at 127 139.2668 0)
+			(at 190.5 162.1268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4724,7 +6352,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 141.8068 0)
+			(at 190.5 164.6668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4733,7 +6361,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 145.796 0)
+			(at 181.61 168.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4742,7 +6370,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 145.796 0)
+			(at 181.61 168.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4751,7 +6379,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 140.97 0)
+			(at 181.61 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,6 +6400,82 @@
 			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 137.16 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24fbcef9-b2d0-48e4-9440-2217f7b96d5d")
+		(property "Reference" "D28"
+			(at 148.59 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 148.59 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 138.43 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 139.7 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 137.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8ab9838d-4e1d-430b-8c1c-27ffc974d6bb")
+		)
+		(pin "4"
+			(uuid "b7383b1b-b77d-4f46-8563-fafeea9664f5")
+		)
+		(pin "3"
+			(uuid "f966de24-806e-4ed5-9049-c9b703cd8424")
+		)
+		(pin "1"
+			(uuid "1753bfc1-fdbd-40b8-a2f8-d0edf3e7ffe7")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D28")
 					(unit 1)
 				)
 			)
@@ -4854,9 +6558,161 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 180.34 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bab32fb-eb59-47cd-9dc0-878dec23f3ea")
+		(property "Reference" "D30"
+			(at 191.77 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 191.77 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 182.88 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 180.34 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83752006-2181-40ce-a515-ac41a1a91d0f")
+		)
+		(pin "4"
+			(uuid "ad14b883-373b-4bfb-8477-7b8b551addab")
+		)
+		(pin "3"
+			(uuid "6aaded8c-2cab-4267-8c0e-b039ad8fa758")
+		)
+		(pin "1"
+			(uuid "a304f2b0-a4ed-45bf-9f73-c19b83319236")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 96.52 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c99d0c2-cee3-446c-9873-b7ab27e0f54e")
+		(property "Reference" "D37"
+			(at 107.95 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 107.95 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 97.79 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 99.06 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 96.52 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "40f1a489-fbff-428d-acf7-3d0a349bbecc")
+		)
+		(pin "4"
+			(uuid "022e1a15-7a26-4dbc-9ae6-9cc2dd085255")
+		)
+		(pin "3"
+			(uuid "cd3c233c-d4b6-4838-bdd9-79545fb3da0d")
+		)
+		(pin "1"
+			(uuid "f8412122-f582-4876-8caf-ca1589cdd9fc")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "Player_2")
 		(lib_id "relè:Player")
-		(at 233.68 93.98 0)
+		(at 302.26 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4865,7 +6721,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e65154c-9adf-489f-b87b-09bed07c8457")
 		(property "Reference" "U9"
-			(at 220.472 91.948 0)
+			(at 289.052 164.338 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4874,7 +6730,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 242.57 91.3157 0)
+			(at 311.15 163.7057 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4883,7 +6739,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 93.98 0)
+			(at 302.26 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4892,7 +6748,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 93.98 0)
+			(at 302.26 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4901,7 +6757,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 93.98 0)
+			(at 302.26 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,7 +6772,7 @@
 			(uuid "4b0cb550-5d9f-430f-bad9-e01ab6ffb2e8")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U9")
 					(unit 1)
@@ -4926,7 +6782,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 156.21 0)
+		(at 181.61 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4935,7 +6791,7 @@
 		(fields_autoplaced yes)
 		(uuid "33b37fe1-0782-43c0-8b45-47cd1ac76022")
 		(property "Reference" "M4"
-			(at 127 154.5068 0)
+			(at 190.5 177.3668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4944,7 +6800,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 157.0468 0)
+			(at 190.5 179.9068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4953,7 +6809,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 161.036 0)
+			(at 181.61 183.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4962,7 +6818,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 161.036 0)
+			(at 181.61 183.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4971,7 +6827,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 156.21 0)
+			(at 181.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +6932,7 @@
 	(symbol
 		(lib_name "Player_1")
 		(lib_id "relè:Player")
-		(at 233.68 74.93 0)
+		(at 302.26 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5085,7 +6941,7 @@
 		(fields_autoplaced yes)
 		(uuid "3b163e60-35b7-48da-92b2-f0756b797584")
 		(property "Reference" "U8"
-			(at 220.472 72.898 0)
+			(at 289.052 145.288 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5094,7 +6950,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 242.57 72.2657 0)
+			(at 311.15 144.6557 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5103,7 +6959,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 74.93 0)
+			(at 302.26 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5112,7 +6968,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 74.93 0)
+			(at 302.26 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5121,7 +6977,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 74.93 0)
+			(at 302.26 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5130,15 +6986,243 @@
 			)
 		)
 		(pin ""
-			(uuid "3e889be0-9016-4354-9c08-c6b8c1b2ad2f")
+			(uuid "3e889be0-9016-4354-9c08-c6b8c1b2ad30")
 		)
 		(pin ""
-			(uuid "4b0cb550-5d9f-430f-bad9-e01ab6ffb2e8")
+			(uuid "4b0cb550-5d9f-430f-bad9-e01ab6ffb2e9")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 177.8 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3eb5d343-ea39-4849-9de2-9779af248cf2")
+		(property "Reference" "D19"
+			(at 189.23 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 189.23 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 180.34 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 177.8 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "db00182e-2e62-454b-be5a-c41a5042fa2a")
+		)
+		(pin "4"
+			(uuid "a8fce764-9dea-465a-9190-b17df3b24f55")
+		)
+		(pin "3"
+			(uuid "d085adc9-29e6-4143-b469-fa7a65361af9")
+		)
+		(pin "1"
+			(uuid "1fc046d3-9591-408b-8685-d3688a1b730b")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 93.98 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3eeba5f3-c07c-4ed2-9228-5ed9d6854a71")
+		(property "Reference" "D26"
+			(at 105.41 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 105.41 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 96.52 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 93.98 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "131bd305-9296-4bd2-b47f-87f75e2da793")
+		)
+		(pin "4"
+			(uuid "3affd1dd-76d9-4e3c-ac4a-7f6ffd694aeb")
+		)
+		(pin "3"
+			(uuid "a384ab5e-8f45-40a1-bc9f-307f636f78dc")
+		)
+		(pin "1"
+			(uuid "1dec4fde-b19b-4bf1-912d-bf756b5d6678")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 139.7 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fed797a-6e21-47a6-8bc4-fc597cecc210")
+		(property "Reference" "D39"
+			(at 151.13 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 151.13 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 140.97 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 142.24 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b8b89b0f-3314-471e-811f-621793e777b5")
+		)
+		(pin "4"
+			(uuid "01002353-1649-4633-9886-25e299b23165")
+		)
+		(pin "3"
+			(uuid "1c0dff4c-9b2a-4a05-a354-76339655a773")
+		)
+		(pin "1"
+			(uuid "a42bb1ee-d16c-4049-b698-7bf772fa8442")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D39")
 					(unit 1)
 				)
 			)
@@ -5221,8 +7305,84 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 158.75 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ec79750-e8a2-4d70-a3a1-f8843cbe970c")
+		(property "Reference" "D29"
+			(at 170.18 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 170.18 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 161.29 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 158.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c1579e82-8a02-427b-a65d-7039f4a838e2")
+		)
+		(pin "4"
+			(uuid "267df1f9-a8ee-4e6a-8ae1-efd9cfa4729c")
+		)
+		(pin "3"
+			(uuid "0adabdee-05d4-4d0c-a561-f1d3f8c07d9c")
+		)
+		(pin "1"
+			(uuid "5d4989f7-3fea-4678-a0e6-fd787b2508fc")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 148.59 0)
+		(at 181.61 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5231,7 +7391,7 @@
 		(fields_autoplaced yes)
 		(uuid "52ad6b47-397b-44e8-852b-2eed5d143559")
 		(property "Reference" "M3"
-			(at 127 146.8868 0)
+			(at 190.5 169.7468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5240,7 +7400,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 149.4268 0)
+			(at 190.5 172.2868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5249,7 +7409,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 153.416 0)
+			(at 181.61 176.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5258,7 +7418,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 153.416 0)
+			(at 181.61 176.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5267,7 +7427,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 148.59 0)
+			(at 181.61 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,9 +7454,85 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 161.29 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5badff85-34c5-4c22-8357-991a0e3b1977")
+		(property "Reference" "D40"
+			(at 172.72 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 172.72 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 162.56 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 163.83 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 161.29 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8fd76105-f1a1-486c-b184-267326039647")
+		)
+		(pin "4"
+			(uuid "590d4ba7-eac6-44dc-92fe-8544819f5ab5")
+		)
+		(pin "3"
+			(uuid "2007f674-2dcb-4bb6-b9d6-060ae61b8049")
+		)
+		(pin "1"
+			(uuid "5b5f3f6a-725f-4145-9ec9-9df2f4fbadf3")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "relè_1")
 		(lib_id "relè:relè")
-		(at 181.61 81.28 0)
+		(at 250.19 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5305,7 +7541,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ef5c010-8880-4d7a-8ec4-98a185652956")
 		(property "Reference" "U3"
-			(at 140.716 64.77 0)
+			(at 209.296 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5314,7 +7550,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 205.74 80.0099 0)
+			(at 274.32 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,7 +7559,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 81.28 0)
+			(at 250.19 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5332,7 +7568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 81.28 0)
+			(at 250.19 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +7577,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 81.28 0)
+			(at 250.19 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5365,7 +7601,7 @@
 			(uuid "ebb543a5-b891-42e3-96a5-e0b17bad8084")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U3")
 					(unit 1)
@@ -5527,7 +7763,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 179.07 0)
+		(at 181.61 201.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5536,7 +7772,7 @@
 		(fields_autoplaced yes)
 		(uuid "6818b567-07b1-460e-ba30-16628e4e8649")
 		(property "Reference" "M7"
-			(at 127 177.3668 0)
+			(at 190.5 200.2268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5545,7 +7781,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 179.9068 0)
+			(at 190.5 202.7668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5554,7 +7790,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 183.896 0)
+			(at 181.61 206.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5563,7 +7799,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 183.896 0)
+			(at 181.61 206.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5572,7 +7808,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 179.07 0)
+			(at 181.61 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5593,6 +7829,82 @@
 			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "M7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 53.34 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a3de711-5578-4f88-8526-d87c6b3ece49")
+		(property "Reference" "D35"
+			(at 64.77 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 64.77 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 54.61 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 55.88 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 53.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "76038bf2-583c-4538-9663-cd003dd7ab9a")
+		)
+		(pin "4"
+			(uuid "b7d67560-988c-4c2d-a8f8-77f5e8b5b11f")
+		)
+		(pin "3"
+			(uuid "8b192f50-7c54-4b77-aa88-977e42856fb3")
+		)
+		(pin "1"
+			(uuid "de870d9c-f3ca-44c3-b420-a4c78693f302")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D35")
 					(unit 1)
 				)
 			)
@@ -5675,8 +7987,84 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 31.75 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e5bdd2e-afe5-4f77-a78e-9d5979d9b2dc")
+		(property "Reference" "D34"
+			(at 43.18 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 43.18 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 33.02 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 34.29 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e806bbf8-6c2b-4d7e-b2d3-fdfebc52eff6")
+		)
+		(pin "4"
+			(uuid "bc989649-e822-4267-91a6-2f8f28a01195")
+		)
+		(pin "3"
+			(uuid "0ff74074-f553-40c0-a76f-fefe6f9819bf")
+		)
+		(pin "1"
+			(uuid "e199a24d-b1e9-4eab-8a5d-3e41da32fad8")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "relè:zapper")
-		(at 203.2 153.67 0)
+		(at 281.94 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5685,7 +8073,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fc84827-2341-42f9-b340-aee34b22ece9")
 		(property "Reference" "U6"
-			(at 188.468 149.352 0)
+			(at 267.208 214.122 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5694,7 +8082,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 224.79 155.8771 0)
+			(at 303.53 220.6471 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,7 +8091,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 153.67 0)
+			(at 281.94 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5712,7 +8100,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 153.67 0)
+			(at 281.94 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5721,7 +8109,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 153.67 0)
+			(at 281.94 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,7 +8124,7 @@
 			(uuid "7db4ab43-f4a6-4c8e-9719-cc2830f0f980")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U6")
 					(unit 1)
@@ -5747,7 +8135,7 @@
 	(symbol
 		(lib_name "relè_2")
 		(lib_id "relè:relè")
-		(at 181.61 100.33 0)
+		(at 250.19 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5756,7 +8144,7 @@
 		(fields_autoplaced yes)
 		(uuid "813c3d62-5c69-4b29-80ae-97796426549b")
 		(property "Reference" "U4"
-			(at 140.716 83.82 0)
+			(at 209.296 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +8153,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 205.74 99.0599 0)
+			(at 274.32 171.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5774,7 +8162,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 100.33 0)
+			(at 250.19 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5783,7 +8171,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 100.33 0)
+			(at 250.19 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5792,7 +8180,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 100.33 0)
+			(at 250.19 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5801,22 +8189,22 @@
 			)
 		)
 		(pin ""
-			(uuid "98bd9187-d847-44d0-abdf-119b733130cb")
+			(uuid "98bd9187-d847-44d0-abdf-119b733130cc")
 		)
 		(pin ""
-			(uuid "44e4323a-b205-4651-b089-c605fa6a90fb")
+			(uuid "44e4323a-b205-4651-b089-c605fa6a90fc")
 		)
 		(pin ""
-			(uuid "34436cb4-956f-4c87-a89a-c778d7e21a14")
+			(uuid "34436cb4-956f-4c87-a89a-c778d7e21a15")
 		)
 		(pin ""
-			(uuid "b033d912-b1c3-4f29-a7c5-28ff747fb14c")
+			(uuid "b033d912-b1c3-4f29-a7c5-28ff747fb14d")
 		)
 		(pin ""
-			(uuid "ebb543a5-b891-42e3-96a5-e0b17bad8084")
+			(uuid "ebb543a5-b891-42e3-96a5-e0b17bad8085")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U4")
 					(unit 1)
@@ -5901,8 +8289,84 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 223.52 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "865a5280-e32d-41e7-addf-046cdc8033b3")
+		(property "Reference" "D32"
+			(at 234.95 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 234.95 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 224.79 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 226.06 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 223.52 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8d5c4657-50fb-467d-bc4b-f1fc94f9f75e")
+		)
+		(pin "4"
+			(uuid "b7e62917-a8d3-4a0a-b5d7-caec1de57873")
+		)
+		(pin "3"
+			(uuid "cc52128a-9238-41c5-bc3f-86f48f684402")
+		)
+		(pin "1"
+			(uuid "b1accb81-3eee-455e-95a6-518480f89555")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCA9685kicad_sym:PCA9685_Breakout")
-		(at 80.01 156.21 0)
+		(at 143.51 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5911,7 +8375,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c62f7fb-72e1-4bcf-a8b4-dff7e4a62b43")
 		(property "Reference" "U1"
-			(at 80.01 156.21 0)
+			(at 143.51 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5920,7 +8384,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 73.66 144.78 0)
+			(at 137.16 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5928,7 +8392,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 156.21 0)
+			(at 143.51 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5937,7 +8401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 156.21 0)
+			(at 143.51 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5946,7 +8410,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 80.01 156.21 0)
+			(at 143.51 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6003,8 +8467,160 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 29.21 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9310c1c6-5e59-4c27-a068-b56cdb4ea31b")
+		(property "Reference" "D23"
+			(at 40.64 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 40.64 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 30.48 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 31.75 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 29.21 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9d5cbc65-a7bf-4032-ba7e-c7f4ed5fbb8d")
+		)
+		(pin "4"
+			(uuid "40b37860-bdb9-415f-839b-502cd4bbaec2")
+		)
+		(pin "3"
+			(uuid "5be4af1d-6c64-4604-859e-088101ea4650")
+		)
+		(pin "1"
+			(uuid "fadf7301-c9c5-4c10-8500-6e70ee587d95")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 220.98 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "959bed82-9974-448a-b4cd-d0e3f3d63875")
+		(property "Reference" "D21"
+			(at 232.41 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 232.41 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 222.25 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 223.52 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 220.98 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d14da6b6-31b4-45ac-8ef8-1d6585b7d1d8")
+		)
+		(pin "4"
+			(uuid "e9f9bc90-48b5-4f46-ba0e-e56245173299")
+		)
+		(pin "3"
+			(uuid "5881d2bf-711f-4f79-a1df-a0147971d6ea")
+		)
+		(pin "1"
+			(uuid "3fe22d10-7036-404c-b357-2b55a00e0e97")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 163.83 0)
+		(at 181.61 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6013,7 +8629,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a7fcd6c-9924-4fb8-b6e8-eedc561ad91c")
 		(property "Reference" "M5"
-			(at 127 162.1268 0)
+			(at 190.5 184.9868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6022,7 +8638,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 164.6668 0)
+			(at 190.5 187.5268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6031,7 +8647,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 168.656 0)
+			(at 181.61 191.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6040,7 +8656,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 168.656 0)
+			(at 181.61 191.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6049,7 +8665,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 163.83 0)
+			(at 181.61 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6076,9 +8692,237 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 50.8 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8a1886c-feb4-4bd1-aca8-f4fd233d7267")
+		(property "Reference" "D24"
+			(at 62.23 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 62.23 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 52.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 53.34 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9fd69b5-7b94-4421-bffd-1134efd76276")
+		)
+		(pin "4"
+			(uuid "de4fbe0b-3d19-40c2-a1a1-16a9c5c7aac0")
+		)
+		(pin "3"
+			(uuid "31a61493-23d7-4e31-95a7-91bf450ae767")
+		)
+		(pin "1"
+			(uuid "f65cbbfb-f594-4185-83fb-a4fd0fd86ebc")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 247.65 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa1a1c5f-569e-43ef-8632-8da607e60541")
+		(property "Reference" "D44"
+			(at 259.08 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 259.08 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 248.92 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 250.19 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 247.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45da6fdf-8300-4fb9-bb2d-3ab3ef5bf0ec")
+		)
+		(pin "4"
+			(uuid "1710c74b-b1eb-44b7-b28d-881021b29608")
+		)
+		(pin "3"
+			(uuid "5effc1ad-9e2f-472c-8e4d-e51066444526")
+		)
+		(pin "1"
+			(uuid "b398e714-fe6f-4cee-89eb-36d44ff98c6a")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 48.26 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab2bc711-e5d0-486c-8022-1ccf6d01250a")
+		(property "Reference" "D13"
+			(at 59.69 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 59.69 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 49.53 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 50.8 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 48.26 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bb0c158f-7795-4343-9536-28c0774afdef")
+		)
+		(pin "4"
+			(uuid "3b7a771a-b7b1-444a-9e2e-8758cb4838be")
+		)
+		(pin "3"
+			(uuid "5a51521b-cdee-4224-a7c3-b3971c5ece72")
+		)
+		(pin "1"
+			(uuid "87b490b9-a98b-4165-ada9-04db75cb7ca3")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "Player_3")
 		(lib_id "relè:Player")
-		(at 234.95 114.3 0)
+		(at 303.53 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6087,7 +8931,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac34043d-7352-4ecd-841f-816c338a4792")
 		(property "Reference" "U10"
-			(at 221.742 112.268 0)
+			(at 290.322 184.658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6096,7 +8940,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 243.84 111.6357 0)
+			(at 312.42 184.0257 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6105,7 +8949,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 114.3 0)
+			(at 303.53 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6114,7 +8958,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 114.3 0)
+			(at 303.53 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6123,7 +8967,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 114.3 0)
+			(at 303.53 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6132,13 +8976,13 @@
 			)
 		)
 		(pin ""
-			(uuid "3e889be0-9016-4354-9c08-c6b8c1b2ad2f")
+			(uuid "3e889be0-9016-4354-9c08-c6b8c1b2ad31")
 		)
 		(pin ""
-			(uuid "4b0cb550-5d9f-430f-bad9-e01ab6ffb2e8")
+			(uuid "4b0cb550-5d9f-430f-bad9-e01ab6ffb2ea")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U10")
 					(unit 1)
@@ -6223,8 +9067,160 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 134.62 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bede0679-05c3-468d-97a9-cdc384c3ebe0")
+		(property "Reference" "D17"
+			(at 146.05 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 146.05 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 135.89 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 137.16 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 134.62 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f6517ab9-4f87-4c3b-8782-b1207ac8f507")
+		)
+		(pin "4"
+			(uuid "b074df55-c4a7-4c0b-a50a-4a09d0083067")
+		)
+		(pin "3"
+			(uuid "54e57d04-05d5-49b9-b534-d6af77e41a07")
+		)
+		(pin "1"
+			(uuid "c91861ed-250d-463a-9498-c7dc8e1e01b0")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 204.47 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2c3ba37-46d7-4759-82a9-b627e343c10b")
+		(property "Reference" "D42"
+			(at 215.9 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 215.9 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 205.74 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 207.01 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 204.47 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f3e19ee2-3ea6-46c5-9625-3f41cdf8c41e")
+		)
+		(pin "4"
+			(uuid "c9239130-44cc-4b6d-9d97-abf4f100bb92")
+		)
+		(pin "3"
+			(uuid "b7325333-2bf8-4627-acb0-cb87301bcdf0")
+		)
+		(pin "1"
+			(uuid "aebd7bea-fc4b-46b1-8373-d2010ff4d1d9")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_Module:Arduino_UNO_R3")
-		(at 69.85 102.87 0)
+		(at 57.15 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6233,7 +9229,7 @@
 		(fields_autoplaced yes)
 		(uuid "c37db89b-1843-4bf8-9773-c9054a710ad7")
 		(property "Reference" "A1"
-			(at 60.8898 71.12 90)
+			(at 48.1898 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +9237,7 @@
 			)
 		)
 		(property "Value" "Arduino_UNO_R3"
-			(at 63.4298 71.12 90)
+			(at 50.7298 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6249,7 +9245,7 @@
 			)
 		)
 		(property "Footprint" "Module:Arduino_UNO_R3"
-			(at 69.85 102.87 0)
+			(at 57.15 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6259,7 +9255,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.arduino.cc/en/Main/arduinoBoardUno"
-			(at 69.85 102.87 0)
+			(at 57.15 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6268,7 +9264,7 @@
 			)
 		)
 		(property "Description" "Arduino UNO Microcontroller Module, release 3"
-			(at 69.85 102.87 0)
+			(at 57.15 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6373,7 +9369,7 @@
 			(uuid "5865cf40-7801-4283-975c-0eab1233e984")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "A1")
 					(unit 1)
@@ -6382,8 +9378,84 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 182.88 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9c3b106-a564-421a-a3a4-390c20b0e82a")
+		(property "Reference" "D41"
+			(at 194.31 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 194.31 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 184.15 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 185.42 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 182.88 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ed22f0e0-d35f-4e2e-857f-22562613a3c0")
+		)
+		(pin "4"
+			(uuid "daa35506-fb7a-44d9-b6b6-56ac5ca8b6b3")
+		)
+		(pin "3"
+			(uuid "d0cb04de-c8d3-450b-993c-3622a2699f8c")
+		)
+		(pin "1"
+			(uuid "11991fe0-0908-485d-9ef7-b7d38cc13652")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "relè:Player")
-		(at 233.68 54.61 0)
+		(at 302.26 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6392,7 +9464,7 @@
 		(fields_autoplaced yes)
 		(uuid "d39a7141-35f8-451e-93b8-3f770a74e6ab")
 		(property "Reference" "U7"
-			(at 220.472 52.578 0)
+			(at 289.052 124.968 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6401,7 +9473,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 242.57 51.9457 0)
+			(at 311.15 124.3357 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6410,7 +9482,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 54.61 0)
+			(at 302.26 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6419,7 +9491,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 54.61 0)
+			(at 302.26 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6428,7 +9500,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 54.61 0)
+			(at 302.26 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6437,13 +9509,13 @@
 			)
 		)
 		(pin ""
-			(uuid "3e889be0-9016-4354-9c08-c6b8c1b2ad2f")
+			(uuid "3e889be0-9016-4354-9c08-c6b8c1b2ad32")
 		)
 		(pin ""
-			(uuid "4b0cb550-5d9f-430f-bad9-e01ab6ffb2e8")
+			(uuid "4b0cb550-5d9f-430f-bad9-e01ab6ffb2eb")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U7")
 					(unit 1)
@@ -6452,9 +9524,237 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 199.39 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6ed12e8-9286-44e9-97c4-afc91b2369ed")
+		(property "Reference" "D20"
+			(at 210.82 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 210.82 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 200.66 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 201.93 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 199.39 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8bd0b45-8231-48de-8a16-aac5a7ffd047")
+		)
+		(pin "4"
+			(uuid "19e7a4d5-73bd-4e9f-a6d1-6a21d68013c3")
+		)
+		(pin "3"
+			(uuid "2b943b00-843a-4f1c-9970-743f2be80e50")
+		)
+		(pin "1"
+			(uuid "e34ec6bd-5b7c-4c35-a71a-46fdaaeeabf5")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 69.85 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db9d4e3b-dce4-41cf-a2a6-9616af78275c")
+		(property "Reference" "D14"
+			(at 81.28 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 81.28 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 71.12 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 72.39 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 69.85 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11b981bd-f975-4fef-b8b5-07053f4d1636")
+		)
+		(pin "4"
+			(uuid "2cd4a74b-c4e8-4768-abdf-7f0551f123b5")
+		)
+		(pin "3"
+			(uuid "b415a104-b3b5-4e31-a60b-8c063fdb7cdc")
+		)
+		(pin "1"
+			(uuid "8ff811d9-09c1-43c7-b494-1e538fd6a7a6")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 74.93 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ddd83f21-e565-441a-b0ed-8363c881a2b8")
+		(property "Reference" "D36"
+			(at 86.36 85.0198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 86.36 87.5598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 76.2 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 77.47 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 74.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24f97d76-8b92-48ad-aae5-0c5d3fc33967")
+		)
+		(pin "4"
+			(uuid "d8bf215c-07fb-4ab9-99eb-339073ca2a82")
+		)
+		(pin "3"
+			(uuid "be7dd4fa-057f-4a25-9be8-890800239586")
+		)
+		(pin "1"
+			(uuid "ac095c57-f8b1-489d-b3a2-ae26f6ab6844")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "relè_3")
 		(lib_id "relè:relè")
-		(at 181.61 120.65 0)
+		(at 250.19 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6463,7 +9763,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0dd7fb7-c923-4202-9deb-312d70abf756")
 		(property "Reference" "U5"
-			(at 140.716 104.14 0)
+			(at 209.296 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6472,7 +9772,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 205.74 119.3799 0)
+			(at 274.32 191.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6481,7 +9781,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 120.65 0)
+			(at 250.19 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6490,7 +9790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 120.65 0)
+			(at 250.19 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6499,7 +9799,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 120.65 0)
+			(at 250.19 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6508,22 +9808,22 @@
 			)
 		)
 		(pin ""
-			(uuid "98bd9187-d847-44d0-abdf-119b733130cb")
+			(uuid "98bd9187-d847-44d0-abdf-119b733130cd")
 		)
 		(pin ""
-			(uuid "44e4323a-b205-4651-b089-c605fa6a90fb")
+			(uuid "44e4323a-b205-4651-b089-c605fa6a90fd")
 		)
 		(pin ""
-			(uuid "34436cb4-956f-4c87-a89a-c778d7e21a14")
+			(uuid "34436cb4-956f-4c87-a89a-c778d7e21a16")
 		)
 		(pin ""
-			(uuid "b033d912-b1c3-4f29-a7c5-28ff747fb14c")
+			(uuid "b033d912-b1c3-4f29-a7c5-28ff747fb14e")
 		)
 		(pin ""
-			(uuid "ebb543a5-b891-42e3-96a5-e0b17bad8084")
+			(uuid "ebb543a5-b891-42e3-96a5-e0b17bad8086")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U5")
 					(unit 1)
@@ -6532,8 +9832,84 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 113.03 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2e48057-fa4b-43c4-a7c8-46a312007a0f")
+		(property "Reference" "D16"
+			(at 124.46 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 124.46 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 114.3 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 115.57 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 113.03 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "125aa772-9be9-4869-89af-7035eadfecd6")
+		)
+		(pin "4"
+			(uuid "c0623ef1-f507-4867-a7c2-0de86de8e052")
+		)
+		(pin "3"
+			(uuid "af0b35fd-23af-4545-893a-9bef7d8949c0")
+		)
+		(pin "1"
+			(uuid "7d763f69-3cae-4196-94c1-08b32442901d")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
-		(at 118.11 186.69 0)
+		(at 181.61 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6542,7 +9918,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee55f88b-f73f-4de7-ba12-d70f7c1c25b8")
 		(property "Reference" "M8"
-			(at 127 184.9868 0)
+			(at 190.5 207.8468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6551,7 +9927,7 @@
 			)
 		)
 		(property "Value" "Motor_Servo"
-			(at 127 187.5268 0)
+			(at 190.5 210.3868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6560,7 +9936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 191.516 0)
+			(at 181.61 214.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6569,7 +9945,7 @@
 			)
 		)
 		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
-			(at 118.11 191.516 0)
+			(at 181.61 214.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6578,7 +9954,7 @@
 			)
 		)
 		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
-			(at 118.11 186.69 0)
+			(at 181.61 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6606,7 +9982,7 @@
 	)
 	(symbol
 		(lib_id "relè:relè")
-		(at 181.61 60.96 0)
+		(at 250.19 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6615,7 +9991,7 @@
 		(fields_autoplaced yes)
 		(uuid "f580b7c6-16ef-4426-ad12-743638302e64")
 		(property "Reference" "U2"
-			(at 140.716 44.45 0)
+			(at 209.296 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6624,7 +10000,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 205.74 59.6899 0)
+			(at 274.32 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6633,7 +10009,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 60.96 0)
+			(at 250.19 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6642,7 +10018,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 60.96 0)
+			(at 250.19 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6651,7 +10027,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 60.96 0)
+			(at 250.19 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6660,24 +10036,176 @@
 			)
 		)
 		(pin ""
-			(uuid "98bd9187-d847-44d0-abdf-119b733130cb")
+			(uuid "98bd9187-d847-44d0-abdf-119b733130ce")
 		)
 		(pin ""
-			(uuid "44e4323a-b205-4651-b089-c605fa6a90fb")
+			(uuid "44e4323a-b205-4651-b089-c605fa6a90fe")
 		)
 		(pin ""
-			(uuid "34436cb4-956f-4c87-a89a-c778d7e21a14")
+			(uuid "34436cb4-956f-4c87-a89a-c778d7e21a17")
 		)
 		(pin ""
-			(uuid "b033d912-b1c3-4f29-a7c5-28ff747fb14c")
+			(uuid "b033d912-b1c3-4f29-a7c5-28ff747fb14f")
 		)
 		(pin ""
-			(uuid "ebb543a5-b891-42e3-96a5-e0b17bad8084")
+			(uuid "ebb543a5-b891-42e3-96a5-e0b17bad8087")
 		)
 		(instances
-			(project ""
+			(project "Arduino luci e servo"
 				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 245.11 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6b54271-101b-4208-b6b0-e17fbaf3f2c9")
+		(property "Reference" "D33"
+			(at 256.54 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 256.54 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 246.38 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 247.65 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 245.11 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c68c8089-30f2-4a69-8d6f-f1c79e975403")
+		)
+		(pin "4"
+			(uuid "b44717ee-0d62-44b7-8721-7dd4052f159e")
+		)
+		(pin "3"
+			(uuid "42201ad3-f785-4a2c-964d-7e60e1822160")
+		)
+		(pin "1"
+			(uuid "7a560e41-0b0f-4c2c-bae0-78c15aff7180")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 201.93 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffe15a2b-444d-4af2-9c38-1ec2f0571f52")
+		(property "Reference" "D31"
+			(at 213.36 64.6998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 213.36 67.2398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 203.2 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 204.47 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 201.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45717c64-36ef-4a75-a6e5-5a90170dcd68")
+		)
+		(pin "4"
+			(uuid "074401a7-4e7e-4267-81c2-835e2e3deec5")
+		)
+		(pin "3"
+			(uuid "38691346-cffa-45f3-b744-175832ab26c9")
+		)
+		(pin "1"
+			(uuid "d213ca65-2cce-48f0-9dba-061235fd14db")
+		)
+		(instances
+			(project "Arduino luci e servo"
+				(path "/f0b8efba-a514-4e83-8bb3-996f9f347897"
+					(reference "D31")
 					(unit 1)
 				)
 			)
