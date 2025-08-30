@@ -53,7 +53,7 @@ while True:
             nextTurn = True
         esp.flush()
     incoming = esp.read_until(size=4).decode()
-    if incoming[:2] == "rk":
+    if incoming[:2] == "rack":
         mag = mag[1:]
         curr_shell = mag[0]
         LIB.relay(curr_shell)

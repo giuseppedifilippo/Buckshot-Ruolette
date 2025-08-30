@@ -4,13 +4,13 @@
 #include <MPU6050_light.h>
 
 MPU6050 mpu{ Wire };
-int trigger_pin = 16;    //pin su cui è collegato l'interruttore del grilletto
-int light = 34;          //pin per i led che simulano il flash del fucile
-int recalibration = 35;  //pin collegato a un interrupt che avvia la ricalibrazione del mpu6050
+int trigger_pin = 18;    //pin su cui è collegato l'interruttore del grilletto   
+int racking_pin = 4;
 String aiming;
 
 
 void Recalibrate() {
+  Serial.println("recalibrating");
   mpu.calcOffsets();
 }
 
@@ -18,9 +18,7 @@ void Recalibrate() {
 void setup() {
   Serial.begin(115200);
   pinMode(trigger_pin, INPUT_PULLUP);
-  pinMode(light, OUTPUT);
-  pinMode(recalibration, INPUT_PULLDOWN);
-  attachInterrupt(digitalPinToInterrupt(recalibration), Recalibrate, RISING);
+  pinMode(racking_pin, INPUT_PULLDOWN);
   
   Wire.begin();
   byte status = mpu.begin();
@@ -39,16 +37,20 @@ unsigned long timer = millis();
 //S = mirando a se stesso
 //L = mirando a sinistra
 void loop() {
+  if (Serial.readStringUntil('\n') == "recalibrate") {
+    Recalibrate();
+  }
+  
   mpu.update();
   //magari quest parte si può rifare col task scheduler
   //tutto sto pappone serve a capire in che direzione sta puntando il fucile
   if ((millis() - timer) > 10) {  //aggiorna la posizione ogni 10ms
     if (mpu.getAngleZ() < 20 && mpu.getAngleZ() > -20 && mpu.getAngleX() < 90) {
-      aiming = "2";
-    } else if (mpu.getAngleZ() < -20 && mpu.getAngleZ() > -60 && mpu.getAngleX() < 90) {
       aiming = "3";
-    } else if (mpu.getAngleZ() < 60 && mpu.getAngleZ() > 20 && mpu.getAngleX() < 90) {
+    } else if (mpu.getAngleZ() < -20 && mpu.getAngleZ() > -60 && mpu.getAngleX() < 90) {
       aiming = "4";
+    } else if (mpu.getAngleZ() < 60 && mpu.getAngleZ() > 20 && mpu.getAngleX() < 90) {
+      aiming = "2";
     }
     if (mpu.getAngleX() > 90 && mpu.getAngleX() < 180) {
       aiming = "1";
@@ -57,5 +59,11 @@ void loop() {
   }
   if (digitalRead(trigger_pin) == LOW) {
     Serial.println("st " + aiming);
+    while (true) {
+      if (digitalRead(racking_pin) == HIGH) {
+        Serial.println("rack");
+        break;
+      }
+    }
   }
 }

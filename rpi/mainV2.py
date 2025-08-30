@@ -195,7 +195,7 @@ class GameManager:
         try:
             incoming = self.esp.read_until(size=4).decode()
             
-            if incoming.startswith("rk"):
+            if incoming.startswith("rack"):
                 self.mag = self.mag[1:]  # Rimuovi cartuccia usata
                 
                 if len(self.mag) <= 2:  # Solo '0b' rimasto
