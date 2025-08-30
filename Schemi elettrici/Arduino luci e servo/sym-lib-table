@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "PCA9685kicad_sym")(type "KiCad")(uri "${KIPRJMOD}/PCA9685kicad_sym.kicad_sym")(options "")(descr ""))
+  (lib (name "zapper")(type "KiCad")(uri "${KIPRJMOD}/zapper.kicad_sym")(options "")(descr ""))
+  (lib (name "relè")(type "KiCad")(uri "${KIPRJMOD}/relè.kicad_sym")(options "")(descr ""))
 )
