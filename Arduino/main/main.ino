@@ -13,7 +13,6 @@ zap n°giocatore -> comando per zappare il giocatore indicato
 #include "update_life.h"
 #include "servo_move.h"
 #include <FastLED.h>
-
 #define n_led 12
 #define n_player 4
 #define data_pin_g1 3

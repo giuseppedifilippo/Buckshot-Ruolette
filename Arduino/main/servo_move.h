@@ -3,8 +3,7 @@
 #define SERVO_MOVE_H
 
 #include <Arduino.h>
-#include <Wire.h>
-#include <Adafruit_PWMServoDriver.h>
+#include <FastLED.h>
 
 // Funzioni
 void setup_servos();
