@@ -1,11 +1,16 @@
 #include <FastLED.h>
+#include "setup_taser.h"
 
 #define time_zapping 2000
 #define n_player 4
 #define n_led 12
 
+extern int pin1_taser;
+extern int pin2_taser;
+extern int pin3_taser;
 extern int life[n_player];
 extern CRGB leds[n_player][n_led];
+extern int del;
 
 extern String action;
 extern String ins_command[3]; 
@@ -19,6 +24,8 @@ int player_matrix = 0;
 
 //invia un segnale ai relè per permettere il passaggio della corrente attraverso gli elettrodi
 void zapping(int player){
+  setup_taser(pin1_taser, pin2_taser, pin3_taser);
+  
   player += 6;
   digitalWrite(player, HIGH);
   delay(time_zapping);

@@ -11,8 +11,10 @@ zap n°giocatore -> comando per zappare il giocatore indicato
 */
 
 #include "update_life.h"
-#include "servo_move.h"
+#include "mostra_shell.h"
 #include <FastLED.h>
+#include "setup_taser.h"
+
 #define n_led 12
 #define n_player 4
 #define data_pin_g1 3
@@ -23,8 +25,15 @@ zap n°giocatore -> comando per zappare il giocatore indicato
 #define data_pin_rele2 8
 #define data_pin_rele3 9
 #define data_pin_rele4 10
+#define data_pin_shell 11
+
+
+int pin1_taser = 12;
+int pin2_taser = 13;
+int pin3_taser = 14;
 
 CRGB leds[n_player][n_led];
+extern CRGB shellled[32];
 
 String action="";
 
@@ -80,8 +89,6 @@ void setup() {
   Serial.begin(9600);
   delay(50);
 
-  setup_servos();
-
   // impostazione relè e default LOW
   pinMode(data_pin_rele1, OUTPUT); digitalWrite(data_pin_rele1, LOW);
   pinMode(data_pin_rele2, OUTPUT); digitalWrite(data_pin_rele2, LOW);
@@ -93,6 +100,9 @@ void setup() {
   FastLED.addLeds<WS2812B, data_pin_g2, GRB>(leds[1], n_led);
   FastLED.addLeds<WS2812B, data_pin_g3, GRB>(leds[2], n_led);
   FastLED.addLeds<WS2812B, data_pin_g4, GRB>(leds[3], n_led);
+
+  //inizializzo i led che mostreranno le shell
+  FastLED.addLeds<WS2812B, data_pin_shell, GRB>(shellled, 32);
 
   clearLed();
 
